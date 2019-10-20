@@ -51,7 +51,7 @@ br{
 #other table{
     border-spacing: 45px 0px;
 }
-/* ANIMATION HOME, PORTFOLIO, BLOG, CONTACT */
+/* ANIMATION NAVIGATION */
 
 #other table td:nth-of-type(1){
     font-size: 20px;
@@ -280,7 +280,6 @@ br{
     margin-right: auto;
     font-family: 'Prompt', sans-serif;
 }
-
 .work table{
     display: inline-block;
     background-color: white;
@@ -294,4 +293,34 @@ br{
     padding: 8px;
     letter-spacing: 1px;
     border-spacing: 5px;
+}
+/* FONT STYLE FOR WORK EXPERIENCE */
+.work table th:nth-of-type(1){
+    font-family: 'Prompt', sans-serif;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 22px;
+    line-height: 40px;
+}
+.work table tr:nth-last-of-type(1){
+    text-align: center;
+}
+.work img{
+    height: 70px;
+    width: 300px;
+}
+#rydges{
+    position: relative;
+    text-align: center;
+}
+#sofitel{
+    position: relative;
+    text-align: center;
+}
+#grandmercure{
+    position: relative;
+    text-align: center;
+}
+iframe{
+    border-radius: 15px;
 }
