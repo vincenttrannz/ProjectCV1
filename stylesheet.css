@@ -6,9 +6,7 @@ html{
 }
 
 /**--BODY CONTENT--**/
-br{
-    background-color: rgb(95, 143, 181);
-}
+
 /**--HEADER CONTENT--**/
 .bio{
     display: block;
@@ -276,16 +274,18 @@ br{
 /* WORK EXPERIENCE CONTENT */
 .work{
     width: 1250px;
+    height: 900px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Prompt', sans-serif;
+    overflow: auto;
 }
 .work table{
     display: inline-block;
     background-color: white;
     border: outset;
     border-radius: 25px;
-    width: 620px;
+    width: 600px;
     height: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -293,6 +293,23 @@ br{
     padding: 8px;
     letter-spacing: 1px;
     border-spacing: 5px;
+}
+
+/* WORK EXPERIENCE SCROLL BAR */
+.work::-webkit-scrollbar {
+    width: 10px;
+}
+.work::-webkit-scrollbar-track {
+    background: rgb(95, 143, 181);
+}
+.work::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(rgb(95, 143, 181), #363535);
+    outline: 1px solid slategray;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.work:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
 }
 /* FONT STYLE FOR WORK EXPERIENCE */
 .work table th:nth-of-type(1){
