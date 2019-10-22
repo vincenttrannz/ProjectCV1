@@ -285,7 +285,7 @@ html{
     background-color: white;
     border: outset;
     border-radius: 25px;
-    width: 600px;
+    width: 610px;
     height: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -335,6 +335,10 @@ html{
     text-align: center;
 }
 #grandmercure{
+    position: relative;
+    text-align: center;
+}
+#sohobrown{
     position: relative;
     text-align: center;
 }
