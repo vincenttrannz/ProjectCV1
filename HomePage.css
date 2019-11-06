@@ -1,7 +1,5 @@
 /*-- HTML PAGE CONTENT --*/
 html{
-    border-style: solid;
-    border-color: rgb(95, 143, 181);
     background-color: rgb(95, 143, 181);
 }
 
@@ -14,37 +12,33 @@ html{
     margin-left: auto;
     margin-right: auto;
 }
-#hori1{
-    position: relative;
-    animation-fill-mode: forwards;
-    animation: zoom 3s;}
-    @keyframes zoom{from{transform:scale(0)} to{transform:scale(1)}
-}
-#hori2{
-    position: relative;
-    animation-fill-mode: forwards;
-    animation: zoom 3s;}
-    @keyframes zoom{from{transform:scale(0)} to{transform:scale(1)}
-}
 /* HEADER STYLE */
-#welcome h1{
-    padding: 15px;
+#welcome{
+    margin: 0px;
+    overflow: hidden;
     display: block;
-    font-family: 'Proza Libre', sans-serif;
-    font-size: 46px;
-    text-align: center;
-    text-align-last: center;
-    position: relative;
-    animation: opac 7s;}@keyframes opac{from{opacity:0} to{opacity:1}
+    position: fixed;
+    background-color: rgb(207, 207, 207);
+    width: 1440px;
+    height: 80px;
+    border: rgb(95, 143, 181) 5px outset;
+    border-radius: 50px;
+    animation: opacnavbar 0.5s;
+    animation-fill-mode: forwards;}
+    @keyframes opacnavbar{from{opacity:0} to{opacity:1}  
 }
 #other{
     font-family: 'Proza Libre', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     text-shadow: 1px 1px whitesmoke;
     color: lightgray;
     display: block;
     margin-left: 40px;
-    padding: 20px;
+    padding: 18px;
+}
+#other a:hover{
+    background-color: rgb(207, 207, 207);
+    color: whitesmoke;
 }
 #other table{
     border-spacing: 45px 0px;
@@ -52,66 +46,93 @@ html{
 /* ANIMATION NAVIGATION */
 
 #other table td:nth-of-type(1){
-    font-size: 20px;
+    color: rgb(63, 94, 119);
+    font-size: 18px;
     position: relative;
     animation: leftmove1 5s;
     animation-fill-mode: forwards;}
     @keyframes leftmove1{from{left:-300px;opacity:0} to{left: 7px;opacity:1} 
 }
 #other table td:nth-of-type(2){
+    color: rgb(63, 94, 119);
     position: relative;
     animation: leftmove2 4s;
     animation-fill-mode: forwards;}
     @keyframes leftmove2{from{left:-400px;opacity:0} to{left: 10px;opacity:1} 
 }
 #other table td:nth-of-type(3){
+    color: rgb(63, 94, 119);
     position: relative;
     animation: leftmove3 3s;
     animation-fill-mode: forwards;}
     @keyframes leftmove3{from{left:-500px;opacity:0} to{left: 15px;opacity:1} 
 }
 #other table td:nth-of-type(4){
+    color: rgb(63, 94, 119);
     position: relative;
     animation: leftmove4 2s;
     animation-fill-mode: forwards;}
     @keyframes leftmove4{from{left:-600px;opacity:0} to{left: 20px;opacity:1} 
 }
 #other table td:nth-of-type(5){
-    padding-left: 80px;
-    padding-right: 80px;
+    color: rgba(0, 0, 0, 0.623);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 #other table td:nth-of-type(6){
     color: black;
     position: relative;
     animation: rightmove1 2s;
     animation-fill-mode: forwards;}
-    @keyframes rightmove1{from{right:-600px;opacity:0} to{right: 35px;opacity:1}
+    @keyframes rightmove1{from{right:-600px;opacity:0} to{right: 20px;opacity:1}
 }
 #other table td:nth-of-type(7){
     color: black;
     position: relative;
     animation: rightmove2 3s;
     animation-fill-mode: forwards;}
-    @keyframes rightmove2{from{right:-600px;opacity:0} to{right: 38px;opacity:1}
+    @keyframes rightmove2{from{right:-600px;opacity:0} to{right: 10px;opacity:1}
 }
 #other table td:nth-of-type(8){
     color: black;
     position: relative;
     animation: rightmove3 4s;
     animation-fill-mode: forwards;}
-    @keyframes rightmove3{from{right:-600px;opacity:0} to{right: 41px;opacity:1}
+    @keyframes rightmove3{from{right:-600px;opacity:0} to{right: 0px;opacity:1}
 }
 #other table td:nth-of-type(9){
     color: black;
     position: relative;
     animation: rightmove4 5s;
     animation-fill-mode: forwards;}
-    @keyframes rightmove4{from{right:-600px;opacity:0} to{right: 44px;opacity:1}
+    @keyframes rightmove4{from{right:-600px;opacity:0} to{right: -10px;opacity:1}
+}
+#other table td:nth-of-type(10){
+    color: rgba(0, 0, 0, 0.623);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#other table td:nth-of-type(11){
+    color: black;
+    position: relative;
+    animation: top1 5s;
+    animation-fill-mode: forwards;}
+    @keyframes top1{from{top:-300px;opacity:0} to{top: 0px;opacity:1}
+}
+#other table td:nth-of-type(12){
+    color: black;
+    position: relative;
+    animation: top2 5s;
+    animation-fill-mode: forwards;}
+    @keyframes top2{from{top:-300px;opacity:0} to{top: 0px;opacity:1}
 }
 /* HEADER STYLE END */
 
 /* TABLE CONTENT PERSONAL INFO -- START*/
-.personalinfo{
+.personal{
+    padding-top: 120px;
+}
+#personalinfo{
     background-color: white;
     border: outset;
     border-radius: 25px;
@@ -121,11 +142,10 @@ html{
     text-align: left;
     letter-spacing: 1px;
     border-spacing: 20px;
-    position: relative;
-    animation: fading1 2s;}
+    animation: fading1 1s;}
     @keyframes fading1{0%{opacity:0}100%{opacity:1}
 }
-.personalinfo ul{
+#personalinfo ul{
     list-style-type: none;
     padding-left: 0;
 }
@@ -137,15 +157,13 @@ html{
     background-color: rgb(95, 143, 181);
     border-width: 4px;
     border-radius: 50%;
-    position: relative;
-    animation: opacity 5s;}@keyframes opacity{from{opacity:0} to{opacity: 1}
+    animation: opacity 1s;}@keyframes opacity{from{opacity:0} to{opacity: 1}
 }
 #aboutmetitle{
     text-align: justify;
     text-align-last: left;
     padding-left: 40px;
-    position: relative;
-    animation: animatezoom 2s;}@keyframes animatezoom{from{transform: scale(0)} to{transform: scale(1)}
+    animation: animatezoom 1s;}@keyframes animatezoom{from{transform: scale(0)} to{transform: scale(1)}
 }
 #aboutmetitle h2{
     letter-spacing: 0.5px;
@@ -162,11 +180,10 @@ html{
     padding-right: 50px;
     padding-left: 40px;
     border-bottom-style: groove;
-    position: relative;
-    animation: opacity 5s;}@keyframes opacity{from{opacity:0} to{opacity: 1}
+    animation: opacity 1s;}@keyframes opacity{from{opacity:0} to{opacity: 1}
 }
 #basicinfo{
-    animation: opacity 5s;}@keyframes opacity{from{opacity:0} to{opacity: 1}
+    animation: opacity 1s;}@keyframes opacity{from{opacity:0} to{opacity: 1}
 }
 #basicinfo th{
     font-family: 'Kanit', sans-serif;
@@ -339,21 +356,27 @@ html{
     width: 300px;
 }
 #rydges{
-    position: relative;
     text-align: center;
 }
 #sofitel{
-    position: relative;
     text-align: center;
 }
 #grandmercure{
-    position: relative;
     text-align: center;
 }
 #sohobrown{
-    position: relative;
     text-align: center;
 }
 iframe{
     border-radius: 15px;
+}
+
+/* SKILL CONTENT STYLE */
+.skills{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: outset;
+    border-radius: 15px;
+    width: 1250px;
 }

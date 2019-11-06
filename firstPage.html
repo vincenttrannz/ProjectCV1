@@ -11,30 +11,32 @@
         <!-- FONT STYLE -->
         <link href="https://fonts.googleapis.com/css?family=Kanit|Libre+Franklin|Prompt|Proza+Libre&display=swap" rel="stylesheet">
 <!-- BODY CONTENT -->
-    <body>
-        <section class="bio">
+    <body id="top">
+        <section>
             <header>
-                <span id="welcome"><h1>WELCOME TO MY PAGE</h1></span>
-                <hr id="hori1">
-                <nav id="other">
-                    <table>
-                        <tr>
-                            <td><a href="firstPage.html"><i class="fas fa-home fa-2x"></i></a></td>
-                            <td><a href="protfolio.html" style="text-decoration: none;">portfolio</a></td>
-                            <td><a href="blog.html" style="text-decoration: none;">blog</a></td>
-                            <td><a href="contact.html" style="text-decoration: none;">contact</a></td>
-                            <td>&nbsp;</td>
-                            <td><a href="#edutitle" style="text-decoration: none;">education</a></td>
-                            <td><a href="#workexp" style="text-decoration: none;">work</a></td> 
-                            <td>achievements</td>
-                            <td>hobby</td>
-                        </tr>
-                    </table>
-                </nav>
+                <div id="welcome">
+                    <nav id="other">
+                        <table>
+                            <tr>
+                                <td><a href="firstPage.html"><i class="fas fa-home fa-2x"></i></a></td>
+                                <td><a href="protfolio.html" style="text-decoration: none;">portfolio</a></td>
+                                <td><a href="blog.html" style="text-decoration: none;">blog</a></td>
+                                <td><a href="contact.html" style="text-decoration: none;">contact</a></td>
+                                <td>|</td>
+                                <td><a href="#edutitle" style="text-decoration: none;">education</a></td>
+                                <td><a href="#workexp" style="text-decoration: none;">work</a></td> 
+                                <td>achievements</td>
+                                <td>hobby</td>
+                                <td>|</td>
+                                <td><a href="#top" style="text-decoration: none;">Top</a></td>
+                                <td><a href="#bottom" style="text-decoration: none;">Bottom</a></td>
+                            </tr>
+                        </table>
+                    </nav>
+                </div>
             </header>
-            <hr id="hori2">
-            <div>&nbsp;</div>
-                <table class="personalinfo"> 
+            <footer class="personal">
+                <table id="personalinfo"> 
                     <tr>
                         <th scope="col" rowspan="4"><img id="image1" src="asset/images/profile.jpg" alt="Vincent"></th>
                     </tr>
@@ -82,7 +84,9 @@
                         <td>&nbsp;</td>
                     </tr>
                 </table>
+            </footer>
         </section>
+<!-- EDUCATION CONTENT BELOW -->
         <span class="breaker">
             <h2 id="edutitle">EDUCATION</h2>
         </span>
@@ -342,14 +346,17 @@
     </div>
 <!-- WORK EXPERIENCE END -->
 <!-- SKILL CONTENT BELOW -->
-            <div>
-            <li>Skills</li>
+    <span class="breaker">
+        <h2 id="workexp">SKILLS</h2>
+    </span>
+        <div class="skills">
                <ul>
                   <li>Customer Service</li>
                   <li>Project and KPI Managing</li>
                   <li>Team leading</li>
                   <li>People Management</li>
                </ul>
+        </div>
             <h2><li>Achievements</li></h2>
                <ol>
                   <li><strong>Photography | Kiwicat</strong></li>
@@ -367,7 +374,6 @@
                      </ul>
                   <li>Film making</li>
                </ol>
-            </div>
-        </ol>
+        </div>
     </body>
 </html>
