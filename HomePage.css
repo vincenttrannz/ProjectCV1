@@ -6,106 +6,46 @@ html{
 /**--BODY CONTENT--**/
 
 /**--HEADER CONTENT--**/
-.bio{
-    display: block;
-    border-color: rgb(95, 143, 181);
-    margin-left: auto;
-    margin-right: auto;
-}
 /* HEADER STYLE */
-#welcome{
-    margin: 0px;
-    overflow: hidden;
-    display: block;
-    position: fixed;
-    background-color: rgb(207, 207, 207);
-    width: 1440px;
-    height: 80px;
-    border: rgb(95, 143, 181) 5px outset;
-    border-radius: 50px;
-    animation: opacnavbar 0.5s;
-    animation-fill-mode: forwards;}
-    @keyframes opacnavbar{from{opacity:0} to{opacity:1}  
-}
 #other{
     font-family: 'Proza Libre', sans-serif;
     font-size: 20px;
     text-shadow: 1px 1px whitesmoke;
     color: lightgray;
     display: block;
-    margin-left: 40px;
-    padding: 18px;
 }
 #other a:hover{
     background-color: rgb(207, 207, 207);
     color: whitesmoke;
 }
 #other table{
-    border-spacing: 45px 0px;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    border-spacing: 50px 0px;
+    text-align: center;
+    position: fixed;
+    background-color: rgb(207, 207, 207);
+    border: rgb(95, 143, 181) 5px outset;
+    border-radius: 50px;
+    animation: opacnavbar 0.5s;
+    animation-fill-mode: forwards;}
+    @keyframes opacnavbar{from{opacity:0} to{opacity:1}  
 }
 /* ANIMATION NAVIGATION */
 
-#other table td:nth-of-type(1){
+#other table td{
     color: rgb(63, 94, 119);
-    font-size: 18px;
+    font-size: 21px;
     position: relative;
-    animation: leftmove1 5s;
+    animation: opac 5s;
     animation-fill-mode: forwards;}
     @keyframes leftmove1{from{left:-300px;opacity:0} to{left: 7px;opacity:1} 
-}
-#other table td:nth-of-type(2){
-    color: rgb(63, 94, 119);
-    position: relative;
-    animation: leftmove2 4s;
-    animation-fill-mode: forwards;}
-    @keyframes leftmove2{from{left:-400px;opacity:0} to{left: 10px;opacity:1} 
-}
-#other table td:nth-of-type(3){
-    color: rgb(63, 94, 119);
-    position: relative;
-    animation: leftmove3 3s;
-    animation-fill-mode: forwards;}
-    @keyframes leftmove3{from{left:-500px;opacity:0} to{left: 15px;opacity:1} 
-}
-#other table td:nth-of-type(4){
-    color: rgb(63, 94, 119);
-    position: relative;
-    animation: leftmove4 2s;
-    animation-fill-mode: forwards;}
-    @keyframes leftmove4{from{left:-600px;opacity:0} to{left: 20px;opacity:1} 
 }
 #other table td:nth-of-type(5){
     color: rgba(0, 0, 0, 0.623);
     padding-left: 10px;
     padding-right: 10px;
-}
-#other table td:nth-of-type(6){
-    color: black;
-    position: relative;
-    animation: rightmove1 2s;
-    animation-fill-mode: forwards;}
-    @keyframes rightmove1{from{right:-600px;opacity:0} to{right: 20px;opacity:1}
-}
-#other table td:nth-of-type(7){
-    color: black;
-    position: relative;
-    animation: rightmove2 3s;
-    animation-fill-mode: forwards;}
-    @keyframes rightmove2{from{right:-600px;opacity:0} to{right: 10px;opacity:1}
-}
-#other table td:nth-of-type(8){
-    color: black;
-    position: relative;
-    animation: rightmove3 4s;
-    animation-fill-mode: forwards;}
-    @keyframes rightmove3{from{right:-600px;opacity:0} to{right: 0px;opacity:1}
-}
-#other table td:nth-of-type(9){
-    color: black;
-    position: relative;
-    animation: rightmove4 5s;
-    animation-fill-mode: forwards;}
-    @keyframes rightmove4{from{right:-600px;opacity:0} to{right: -10px;opacity:1}
 }
 #other table td:nth-of-type(10){
     color: rgba(0, 0, 0, 0.623);
@@ -115,14 +55,14 @@ html{
 #other table td:nth-of-type(11){
     color: black;
     position: relative;
-    animation: top1 5s;
+    animation: top1 2s;
     animation-fill-mode: forwards;}
     @keyframes top1{from{top:-300px;opacity:0} to{top: 0px;opacity:1}
 }
 #other table td:nth-of-type(12){
     color: black;
     position: relative;
-    animation: top2 5s;
+    animation: top2 2s;
     animation-fill-mode: forwards;}
     @keyframes top2{from{top:-300px;opacity:0} to{top: 0px;opacity:1}
 }
@@ -220,6 +160,9 @@ html{
     color: rgb(106, 142, 178);
     text-align: left;
 }
+#resume td:hover{
+    color: rgb(63, 94, 119);
+}
 
 /* TABLE CONTENT PERSONALINFO -- END */
 
@@ -232,11 +175,11 @@ html{
     background-color: rgb(95, 143, 181);
 }
 .breaker h2{
-    font-size: 38px;
+    font-size: 42px;
     font-weight: 800;
     font-family: 'Libre Franklin', sans-serif;
-    color: lightgray;
-    text-shadow: 3px 3px whitesmoke;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px rgb(63, 94, 119);
     letter-spacing: 1px;
     text-align: center;
 }
@@ -314,8 +257,9 @@ html{
     background-color: white;
     border: outset;
     border-radius: 25px;
+    margin-top: 0px;
     width: 610px;
-    height: 900px;
+    height: 700px;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -366,9 +310,6 @@ html{
 }
 #sohobrown{
     text-align: center;
-}
-iframe{
-    border-radius: 15px;
 }
 
 /* SKILL CONTENT STYLE */
