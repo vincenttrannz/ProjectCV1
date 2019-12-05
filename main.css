@@ -1,0 +1,323 @@
+/*-- HTML PAGE CONTENT --*/
+html{
+    background-color: rgb(95, 143, 181);
+}
+
+/**--BODY CONTENT--**/
+
+/**--HEADER CONTENT--**/
+/* HEADER STYLE */
+#other{
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 20px;
+    text-shadow: 1px 1px whitesmoke;
+    color: lightgray;
+    display: block;
+}
+#other a:hover{
+    background-color: rgb(207, 207, 207);
+    color: whitesmoke;
+}
+#other table{
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    border-spacing: 50px 0px;
+    text-align: center;
+    position: fixed;
+    background-color: rgb(207, 207, 207);
+    border: rgb(95, 143, 181) 5px outset;
+    border-radius: 50px;
+    animation: opacnavbar 0.5s;
+    animation-fill-mode: forwards;}
+    @keyframes opacnavbar{from{opacity:0} to{opacity:1}  
+}
+/* ANIMATION NAVIGATION */
+
+#other table td{
+    color: rgb(63, 94, 119);
+    font-size: 21px;
+    position: relative;
+    animation: opac 5s;
+    animation-fill-mode: forwards;}
+    @keyframes leftmove1{from{left:-300px;opacity:0} to{left: 7px;opacity:1} 
+}
+#other table td:nth-of-type(5){
+    color: rgba(0, 0, 0, 0.623);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#other table td:nth-of-type(10){
+    color: rgba(0, 0, 0, 0.623);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#other table td:nth-of-type(11){
+    color: black;
+    position: relative;
+    animation: top1 2s;
+    animation-fill-mode: forwards;}
+    @keyframes top1{from{top:-300px;opacity:0} to{top: 0px;opacity:1}
+}
+#other table td:nth-of-type(12){
+    color: black;
+    position: relative;
+    animation: top2 2s;
+    animation-fill-mode: forwards;}
+    @keyframes top2{from{top:-300px;opacity:0} to{top: 0px;opacity:1}
+}
+/* HEADER STYLE END */
+
+/* TABLE CONTENT PERSONAL INFO -- START*/
+.personal{
+    padding-top: 120px;
+}
+#personalinfo{
+    background-color: white;
+    border: outset;
+    border-radius: 25px;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    letter-spacing: 1px;
+    border-spacing: 20px;
+    animation: fading1 1s;}
+    @keyframes fading1{0%{opacity:0}100%{opacity:1}
+}
+#personalinfo ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+#image1{
+    padding: 15px;
+    width: 380px;
+    height: 380px;
+    border: inset rgb(95, 143, 181);
+    background-color: rgb(95, 143, 181);
+    border-width: 4px;
+    border-radius: 50%;
+    animation: opacity 1s;}@keyframes opacity{from{opacity:0} to{opacity: 1}
+}
+#aboutmetitle{
+    text-align: justify;
+    text-align-last: left;
+    padding-left: 40px;
+    animation: animatezoom 1s;}@keyframes animatezoom{from{transform: scale(0)} to{transform: scale(1)}
+}
+#aboutmetitle h2{
+    letter-spacing: 0.5px;
+    font-size: 30px;
+    font-family: 'Proza Libre', sans-serif;
+}
+#aboutme{
+    font-family: 'Proza Libre', sans-serif;
+    text-align: justify;
+    line-height: 30px;
+    border: 3px;
+    border-color: rgb(80, 169, 236);
+    padding-bottom: 30px;
+    padding-right: 50px;
+    padding-left: 40px;
+    border-bottom-style: groove;
+    animation: opacity 1s;}@keyframes opacity{from{opacity:0} to{opacity: 1}
+}
+#basicinfo{
+    animation: opacity 1s;}@keyframes opacity{from{opacity:0} to{opacity: 1}
+}
+#basicinfo th{
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    padding-left: 40px;
+    line-height: 40px;
+}
+#basicinfo td{
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 40px;
+}
+.button{
+    background-color: lightgray;
+}
+#resume th{
+    font-size: 18px;
+    text-align: center;
+}
+.button{
+    border-radius: 15px;
+    width: 350px;
+    height: 40px;
+    box-shadow: 2px 4px  darkgrey;
+    letter-spacing: 2px;
+    cursor: pointer;
+    outline: none;
+}
+.button:hover{
+    color: whitesmoke;
+    border-radius: 15px;
+    background-color: rgb(106, 142, 178);
+}
+#resume td{
+    color: rgb(106, 142, 178);
+    text-align: left;
+}
+#resume td:hover{
+    color: rgb(63, 94, 119);
+}
+
+/* TABLE CONTENT PERSONALINFO -- END */
+
+/* STYLE FOR THE BREAK PART */
+.breaker{
+    display: block;
+    width: 100vw;
+    padding-top: 40px;
+    height: 120px;
+    background-color: rgb(95, 143, 181);
+}
+.breaker h2{
+    font-size: 42px;
+    font-weight: 800;
+    font-family: 'Libre Franklin', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px rgb(63, 94, 119);
+    letter-spacing: 1px;
+    text-align: center;
+}
+/* EDUCATION CONTENT - START */
+.education table{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: outset;
+    border-radius: 15px;
+    width: 85vw;
+}
+#school{
+    color: rgb(95, 143, 181);
+    font-size: 25px;
+    line-height: 50px;
+}
+
+/* SCHOOL IMAGES */
+#school a{
+    font-size: 28px;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+}
+#victoria{
+    width: 420px;
+    height: 120px;
+}
+#eda{
+    width: 420px;
+    height: 150px;
+}
+
+/* EDUCATION CONTENT */
+#educontent{
+    font-size: 16px;
+    line-height: 25px;
+}
+#educontent tr:nth-of-type(1){
+    font-family: 'Prompt', sans-serif;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+#educontent tr:nth-of-type(2){
+    font-family: 'Prompt', sans-serif;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 20px;
+    line-height: 40px;
+}
+#educontent tr:nth-of-type(3){
+    font-family: 'Prompt', sans-serif;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 18px;
+    line-height: 35px;
+}
+#educontent ul{
+    font-family: 'Prompt', sans-serif;
+}
+
+/* WORK EXPERIENCE CONTENT */
+.work{
+    width: 85vw;
+    height: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Prompt', sans-serif;
+    font-size: inherit;
+    overflow: auto;
+}
+.work table{
+    display: inline-block;
+    background-color: white;
+    border: outset;
+    border-radius: 25px;
+    margin: 10px;
+    width: 40vw;
+    height: 750px;
+    text-align: left;
+    padding: 8px;
+    letter-spacing: 1px;
+    border-spacing: 5px;
+}
+
+/* WORK EXPERIENCE SCROLL BAR */
+.work::-webkit-scrollbar {
+    width: 10px;
+    margin: 0;
+}
+.work::-webkit-scrollbar-track {
+    background: rgb(95, 143, 181);
+}
+.work::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(rgb(95, 143, 181), #363535);
+    outline: 1px solid slategray;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.work:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+/* FONT STYLE FOR WORK EXPERIENCE */
+.work table th:nth-of-type(1){
+    font-family: 'Prompt', sans-serif;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 22px;
+    line-height: 40px;
+}
+.work table tr:nth-last-of-type(1){
+    text-align: center;
+}
+.work img{
+    height: 70px;
+    width: 300px;
+}
+#rydges{
+    text-align: center;
+}
+#sofitel{
+    text-align: center;
+}
+#grandmercure{
+    text-align: center;
+}
+#sohobrown{
+    text-align: center;
+}
+
+/* SKILL CONTENT STYLE */
+.skills{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: outset;
+    border-radius: 15px;
+    width: 85vw;
+}
