@@ -19,6 +19,7 @@ html{
     color: whitesmoke;
 }
 #other table{
+    z-index: 2;
     top: 0;
     width: 100vw;
     height: 80px;
@@ -245,28 +246,30 @@ html{
 
 /* WORK EXPERIENCE CONTENT */
 .work{
-    width: 85vw;
-    height: 900px;
+    width: 100vw;
+    height: 680px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Prompt', sans-serif;
     font-size: inherit;
+    display: flex;
     overflow: auto;
 }
 .work table{
-    display: inline-block;
+    display: inline-flex;
+    white-space: nowrap;
     background-color: white;
     border: outset;
     border-radius: 25px;
-    margin: 10px;
-    width: 40vw;
-    height: 750px;
+    margin: 0 50px 0 20px;
+    width: 100vw;
+    height: 650px;
     text-align: left;
-    padding: 8px;
-    letter-spacing: 1px;
-    border-spacing: 5px;
+    text-align-last: left;
+    padding: 20px;
+    letter-spacing: 0.75px;
+    border-spacing: 2px;
 }
-
 /* WORK EXPERIENCE SCROLL BAR */
 .work::-webkit-scrollbar {
     width: 10px;
@@ -276,8 +279,8 @@ html{
     background: rgb(95, 143, 181);
 }
 .work::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(rgb(95, 143, 181), #363535);
-    outline: 1px solid slategray;
+    background-image: linear-gradient(to left, rgb(63,94,119), whitesmoke);
+    border: outset 1px gray;
     border-radius: 10px;
     visibility: hidden;
 }
@@ -300,27 +303,137 @@ html{
     width: 300px;
 }
 #rydges{
-    text-align: center;
+    text-align-last: center;
 }
 #sofitel{
-    text-align: center;
+    text-align-last: center;
 }
 #grandmercure{
-    text-align: center;
+    text-align-last: center;
 }
 #sohobrown{
-    text-align: center;
+    text-align-last: center;
 }
 
 /* SKILL CONTENT STYLE */
 .skills{
+    display: block;
     margin-left: auto;
     margin-right: auto;
     background-color: white;
     border: outset;
     border-radius: 15px;
     width: 85vw;
+    padding: 20px;
 }
+.skillFieldset{
+    display: flex;
+    width: 45%;
+    text-align: left;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: gray outset 1px;
+    border-radius: 15px;
+    padding: 0 25px 25px 25px;
+    background-color: rgb(240, 240, 240);
+}
+.skillFieldset:nth-of-type(1){
+    margin-left: 3%;
+    float: left;
+}
+.skillFieldset:nth-of-type(3){
+    margin-bottom: 10px;
+}
+.skillFieldset legend{
+    background-color: white;
+    text-align: center;
+    line-height: 0.5;
+    border: gainsboro solid 2px;
+    box-shadow: rgb(163, 163, 163) 2px 2px;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.skillFieldset legend h3{
+    color: rgb(63, 94, 119);
+    text-shadow: gainsboro 2px 2px;
+    font-style: oblique;
+    font-size: 1.75rem;
+}
+.skillFieldset h4{
+    color: black;
+    text-shadow: gainsboro 1px 1px;
+    padding-left: 5px;
+    font-style: oblique;
+    font-size: 1.25rem;
+}
+.skillsContainer{
+    border: inset 1.5px;
+    box-shadow: gray 1px 1px;
+    border-radius: 25px;
+    width: 100%;
+    background-color: rgb(210, 210, 210);
+    text-align: left;
+    color: ghostwhite;
+}
+.skill{
+    margin: 2px;
+    border-radius: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(63, 94, 119);
+}
+/* Coding skill */
+.html_css{
+    width: 90%;
+}
+.bootstrap{
+    width: 85%;
+}
+.javascript{
+    width: 80%;
+}
+.python{
+    width: 50%;
+}
+.react{
+    width: 75%;
+}
+.redux{
+    width: 70%;
+}
+.git{
+    width: 70%;
+}
+.mongodb{
+    width: 50%;
+}
+/* Design skill */
+.photoshop{
+    width: 70%;
+}
+.lightroom{
+    width: 60%;
+}
+.photography{
+    width: 80%;
+}
+
+/* Other skill */
+.customerService{
+    width: 90%;
+}
+.leadership{
+    width: 95%;
+}
+.teamwork{
+    width: 80%;
+}
+.tenacious{
+    width: 90%;
+}
+
 
 /* ACHIEVEMENT CONTENT STYLE */
 .achievement{
