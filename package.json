@@ -4,7 +4,9 @@
   "description": "Simple REACT CV",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server & webpack --watch"
+    "start": "node server",
+    "build": "webpack",
+    "dev": "nodemon server & webpack --watch"
   },
   "babel": {
     "presets": [
