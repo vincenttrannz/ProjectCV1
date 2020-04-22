@@ -1,0 +1,57 @@
+{
+  "name": "projectcv1",
+  "version": "1.0.0",
+  "description": "Simple REACT CV",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server & webpack --watch"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincenttrannz/ProjectCV1.git"
+  },
+  "author": "Vincent",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vincenttrannz/ProjectCV1/issues"
+  },
+  "homepage": "https://github.com/vincenttrannz/ProjectCV1#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "chai": "^3.5.0",
+    "core-js": "^0.9.6",
+    "mocha": "^7.1.1",
+    "react": "^16.13.1",
+    "react-addons-test-utils": "^15.2.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "react-shallow-output": "^0.2.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "react-mailto": "^0.4.0",
+    "knex": "^0.20.13",
+    "sqlite3": "^4.1.1",
+    "superagent": "^5.2.2",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
