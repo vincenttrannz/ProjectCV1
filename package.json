@@ -41,14 +41,15 @@
   "dependencies": {
     "express": "^4.17.1",
     "knex": "^0.20.13",
-    "sqlite3": "^4.1.1",
-    "superagent": "^5.2.2",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11",
+    "nodemon": "^2.0.3",
     "react": "^16.13.1",
     "react-addons-test-utils": "^15.2.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
-    "react-shallow-output": "^0.2.0"
+    "react-shallow-output": "^0.2.0",
+    "sqlite3": "^4.1.1",
+    "superagent": "^5.2.2",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   }
 }
