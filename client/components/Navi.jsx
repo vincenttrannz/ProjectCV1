@@ -12,10 +12,10 @@ function Navi(props){
               <td><Link to="/portfolio">Portfolio</Link></td>
               <td><Link to="/blog">Blog</Link></td>
               <td>|</td>
-              <td><Link to="/" onClick={props.scrollEduSmoothHandler}>Education</Link></td>
-              <td><Link to="/" onClick={props.scrollWorkSmoothHandler}>Work</Link></td>
-              <td><Link to="/" onClick={props.scrollSkillSmoothHandler}>Skills</Link></td>
-              <td><Link to="/" onClick={props.scrollContactSmoothHandler}>Contact</Link></td>
+              <td><a onClick={props.scrollEduSmoothHandler}>Education</a></td>
+              <td><a onClick={props.scrollWorkSmoothHandler}>Work</a></td>
+              <td><a onClick={props.scrollSkillSmoothHandler}>Skills</a></td>
+              <td><a onClick={props.scrollContactSmoothHandler}>Contact</a></td>
             </tr>
           </thead>
         </table>

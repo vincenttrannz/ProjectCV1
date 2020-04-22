@@ -5,10 +5,12 @@ class Contact extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      scrollContact: props.scrollContact,
       name: '',
       email: '',
       message: '',
+    }
+    this.scrollContact = {
+      scrollContact: props.scrollContact
     }
   }
 
@@ -37,7 +39,7 @@ class Contact extends React.Component{
   render(){
     return(
       <>
-      <span ref={this.state.scrollContact} className="breaker">
+      <span ref={this.scrollContact.scrollContact} className="breaker">
         <h2>CONTACT</h2>
       </span>
       <div className="contactDiv">
