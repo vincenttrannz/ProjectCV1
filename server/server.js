@@ -1,6 +1,6 @@
 const path = require('path')
 const express = require('express')
-const contacts = require('./routes/contacts')
+const sendEmail = require('./routes/sendEmail')
 
 
 const server = express()
@@ -8,6 +8,6 @@ const server = express()
 server.use(express.json())
 server.use(express.static(path.join(__dirname, '../public')))
 
-server.use('/api/v1/contacts', contacts)
+server.use('/api/v1/sendEmail', sendEmail)
 
 module.exports = server

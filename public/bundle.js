@@ -86,24 +86,24 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./client/api/contact.js":
-/*!*******************************!*\
-  !*** ./client/api/contact.js ***!
-  \*******************************/
-/*! exports provided: saveContact */
+/***/ "./client/api/sendEmail.js":
+/*!*********************************!*\
+  !*** ./client/api/sendEmail.js ***!
+  \*********************************/
+/*! exports provided: sendEmail */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "saveContact", function() { return saveContact; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sendEmail", function() { return sendEmail; });
 /* harmony import */ var superagent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! superagent */ "./node_modules/superagent/lib/client.js");
 /* harmony import */ var superagent__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(superagent__WEBPACK_IMPORTED_MODULE_0__);
 
-var contactUrl = 'http://localhost:3000/api/v1/contacts';
-function saveContact(contact) {
-  return superagent__WEBPACK_IMPORTED_MODULE_0___default.a.post(contactUrl).send(contact).then(function (res) {
+var baseUrl = 'http://localhost:3000/api/v1/sendEmail';
+function sendEmail(email) {
+  return superagent__WEBPACK_IMPORTED_MODULE_0___default.a.post(baseUrl).send(email).then(function (res) {
     return res.body;
-  }, console.log(contact));
+  });
 }
 
 /***/ }),
@@ -253,7 +253,7 @@ var App = /*#__PURE__*/function (_React$Component) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _api_contact__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api/contact */ "./client/api/contact.js");
+/* harmony import */ var _api_sendEmail__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api/sendEmail */ "./client/api/sendEmail.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -298,25 +298,30 @@ var Contact = /*#__PURE__*/function (_React$Component) {
     });
 
     _defineProperty(_assertThisInitialized(_this), "handleSubmit", function (event) {
-      console.log(_this.state);
       event.preventDefault();
-      Object(_api_contact__WEBPACK_IMPORTED_MODULE_1__["saveContact"])(_this.state).then(_this.resetForm);
+      Object(_api_sendEmail__WEBPACK_IMPORTED_MODULE_1__["sendEmail"])(_this.state).then(_this.resetForm);
     });
 
     _defineProperty(_assertThisInitialized(_this), "resetForm", function () {
       _this.setState({
-        name: '',
+        to: 'tranhieunz@gmail.com',
+        from: 'tranhieunz@gmail.com',
+        subject: 'Email from SENDGRID',
+        text: '',
         email: '',
-        message: ''
+        name: ''
       });
 
       alert('Message sent successfully');
     });
 
     _this.state = {
-      name: '',
+      to: 'tranhieunz@gmail.com',
+      from: 'tranhieunz@gmail.com',
+      subject: 'Email from SENDGRID',
+      text: '',
       email: '',
-      message: ''
+      name: ''
     };
     _this.scrollContact = {
       scrollContact: props.scrollContact
@@ -351,7 +356,7 @@ var Contact = /*#__PURE__*/function (_React$Component) {
         id: "emailDiv"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
         htmlFor: "email"
-      }, "Email address "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+      }, "Your email address "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "email",
         id: "email",
         name: "email",
@@ -361,13 +366,13 @@ var Contact = /*#__PURE__*/function (_React$Component) {
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "messageDiv"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
-        htmlFor: "message"
+        htmlFor: "text"
       }, "Message"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
         type: "textbox",
-        id: "message",
-        name: "message",
+        id: "text",
+        name: "text",
         rows: "10",
-        value: this.state.message,
+        value: this.state.text,
         onChange: this.handleChange,
         required: true
       })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "Submit"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {

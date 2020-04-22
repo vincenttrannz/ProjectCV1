@@ -13,7 +13,6 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req,res)=>{
-  console.log(req.body)
   db.saveContact(req.body)
   .then(()=>{
     res.json({})
