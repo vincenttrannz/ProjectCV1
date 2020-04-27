@@ -17,6 +17,6 @@ function saveContact(contact, db = connection){
   .insert({
     name: contact.name,
     email: contact.email,
-    message: contact.message
+    text: contact.text
   })
 }

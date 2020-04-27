@@ -1,12 +1,9 @@
 import React from 'react'
-import { sendEmail } from '../api/sendEmail'
+import { sendEmail, saveContact } from '../api/contact'
 class Contact extends React.Component{
   constructor(props){
     super(props)
     this.state = {
-      to: 'tranhieunz@gmail.com',
-      from: 'tranhieunz@gmail.com',
-      subject: 'Email from SENDGRID',
       text: '',
       email: '',
       name: ''
@@ -24,15 +21,13 @@ class Contact extends React.Component{
 
   handleSubmit = (event) =>{
     event.preventDefault()
+    saveContact(this.state)
     sendEmail(this.state)
     .then(this.resetForm)
   }
 
   resetForm = () =>{
     this.setState({
-      to: 'tranhieunz@gmail.com',
-      from: 'tranhieunz@gmail.com',
-      subject: 'Email from SENDGRID',
       text: '',
       email: '',
       name: ''

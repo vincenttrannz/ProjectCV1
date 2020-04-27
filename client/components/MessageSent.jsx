@@ -6,7 +6,7 @@ export class MessageSent extends Component {
     return (
       <Spring
         from={{ opacity: 0 }}
-        to={{ opacity: 2 }}>
+        to={{ opacity: 1 }}>
         {props => <div style={props}>Testing</div>}
       </Spring>
     )

@@ -49,7 +49,6 @@ class App extends React.Component{
             <WorkDisplay scrollWork={this.scrollWork}></WorkDisplay>
             <Skill scrollSkills={this.scrollSkills}></Skill>
             <Contact scrollContact={this.scrollContact}></Contact>
-            <MessageSent></MessageSent>
           </Route>
         </Router>
       </>

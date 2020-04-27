@@ -4,7 +4,7 @@ exports.up = function(knex) {
     table.increments('id').primary()
     table.string('name')
     table.string('email')
-    table.string('message')
+    table.string('text')
   })
 };
 

@@ -23,7 +23,21 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 // };
 router.post('/', (req,res)=>{
   console.log(req.body)
-  sgMail.send(req.body)
+
+  const msg = {
+    to: process.env.SEND_EMAILS_TO,
+    from: process.env.SEND_EMAILS_TO,
+    replyTo: req.body.email,
+    subject: `New website message from ${req.body.name}`,
+    name: req.body.name,
+    text: `
+    You have a new message from ${req.body.name} (${req.body.email}) via your website.
+    
+    Here it is:
+    ${req.body.text}
+    `,
+  };
+  sgMail.send(msg)
   .then(() => {}, error => {
     console.error(error);
     if (error.response) {
