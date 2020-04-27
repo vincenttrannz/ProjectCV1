@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
+import {Spring} from 'react-spring/renderprops'
 
 export class MessageSent extends Component {
   render() {
     return (
-      <div>
-        <h1>Message Sent! Thank you.</h1>
-      </div>
+      <Spring
+        from={{ opacity: 0 }}
+        to={{ opacity: 2 }}>
+        {props => <div style={props}>Testing</div>}
+      </Spring>
     )
   }
 }

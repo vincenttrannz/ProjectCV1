@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Spring} from 'react-spring/renderprops'
 
 class Personal extends React.Component{
   constructor(props){

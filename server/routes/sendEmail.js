@@ -2,14 +2,24 @@
 // https://github.com/sendgrid/sendgrid-nodejs
 const router = require('express').Router()
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey('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');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
+// WHAT I WANT
 // const msg = {
 //   to: 'tranhieunz@gmail.com',
 //   from: 'tranhieunz@gmail.com',
 //   subject: 'Sending Test',
 //   name: 'Your name',
 //   text: 'and easy to do anywhere, even with Node.js',
+// };
+
+// TEMPLATE FROM SENDGRID
+// const msg = {
+//   to: 'test@example.com',
+//   from: 'test@example.com',
+//   subject: 'Sending with Twilio SendGrid is Fun',
+//   text: 'and easy to do anywhere, even with Node.js',
+//   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
 // };
 router.post('/', (req,res)=>{
   console.log(req.body)
