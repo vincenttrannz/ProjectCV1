@@ -8,6 +8,7 @@ import WorkDisplay from './WorkDisplay'
 import Skill from './Skill'
 import Contact from './Contact'
 import MessageSent from './MessageSent'
+import Portfolio from './Portfolio';
 
 class App extends React.Component{
   scrollEdu = createRef();
@@ -44,10 +45,11 @@ class App extends React.Component{
             </Navi>
           </Route>
           <Route exact path="/">
-            <Personal></Personal>
+            <Personal/>
             <Education scrollEdu={this.scrollEdu}></Education>
             <WorkDisplay scrollWork={this.scrollWork}></WorkDisplay>
             <Skill scrollSkills={this.scrollSkills}></Skill>
+            <Portfolio/>
             <Contact scrollContact={this.scrollContact}></Contact>
           </Route>
         </Router>

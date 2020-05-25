@@ -6,7 +6,7 @@ class Personal extends React.Component{
     this.state = {
       personal: {
         Pic: "/images/profile1.jpg",
-        Resume: "/document/resume.doc",
+        Resume: "/document/resume.pdf",
         From: "Wellington, New Zealand",
         Ethinicity: "Vietnam",
         Citizenship: "New Zealand",
@@ -61,7 +61,7 @@ class Personal extends React.Component{
               <td colSpan="6">
                 <ul>
                   {personalValue.map((item, i)=>{
-                    if(item.includes('.jpg') || item.includes('.doc') || item.includes('vincent')){
+                    if(item.includes('.jpg') || item.includes('.pdf') || item.includes('vincent')){
                       return undefined
                     } else if (item.includes('.com')){
                       return <li key={i}><a style={{color: 'blue'}} href="mailto:tranhieunz@gmail.com">tranhieunz@gmail.com</a></li>

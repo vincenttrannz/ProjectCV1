@@ -531,3 +531,24 @@ input[type=text], input[type=email], textarea{
     margin: 8px 0;
 }
 
+/* PORTFOLIO */
+.portfolio{
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: outset;
+    border-radius: 15px;
+    width: 85vw;
+    height: 800px;
+    padding: 20px;
+}
+
+.portfolio iframe{
+    margin: 1%;
+    width: 48%;
+    height: 100%;
+    border: solid 1px gray;
+    border-radius: 15px;
+}

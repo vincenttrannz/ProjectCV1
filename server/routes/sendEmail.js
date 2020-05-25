@@ -22,8 +22,6 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 //   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
 // };
 router.post('/', (req,res)=>{
-  console.log(req.body)
-
   const msg = {
     to: process.env.SEND_EMAILS_TO,
     from: process.env.SEND_EMAILS_TO,
@@ -37,6 +35,7 @@ router.post('/', (req,res)=>{
     ${req.body.text}
     `,
   };
+  
   sgMail.send(msg)
   .then(() => {}, error => {
     console.error(error);
