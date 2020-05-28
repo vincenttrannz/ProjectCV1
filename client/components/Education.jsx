@@ -5,9 +5,13 @@ function Education(props){
   return(
     <>
     <span ref={props.scrollEdu} className="breaker">
-      <h2>EDUCATION</h2>
+      <h2 data-aos="fade-down" data-aos-offset="0" data-aos-duration="600" data-aos-easing="ease-in-back">EDUCATION</h2>
     </span>
-    <section className="education">
+    <section className="education" 
+      data-aos="fade-up"
+      data-aos-offset="0"
+      data-aos-duration="600"
+      data-aos-easing="ease-in-back">
       <table>
         <thead id="school">
           <tr>

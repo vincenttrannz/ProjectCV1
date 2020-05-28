@@ -14,43 +14,61 @@ function Skill(props){
   return(
     <>
     <span ref={props.scrollSkills} className="breaker">
-      <h2>SKILLS</h2>
+      <h2 data-aos="fade-down">SKILLS</h2>
     </span>
-    <div className="skills">
-      <fieldset className="skillFieldset">
+    <div className="skills"
+      data-aos="fade-up"
+      data-aos-duration="600"
+      data-aos-offset="0">
+      <fieldset className="skillFieldset" data-aos="zoom-in-right" data-aos-duration="1000">
         <legend><h3>PROGRAMMING</h3></legend>
         {programming[0].map((item,i)=>{
           return(
             <>
             <h4 key={i}>{item.replace('_', ' & ')}</h4>
             <div className="skillsContainer">
-              <div key={i} className={`skill ${item}`}></div>
+              <div key={i} className={`skill ${item}`}
+                data-aos="flip-up" 
+                data-aos-easing="ease-in-back"
+                data-aos-duration="1500"
+                data-aos-anchor-placement="bottom-bottom" 
+                data-aos-offset="0"></div>
             </div>
             </>
           )
         })}
       </fieldset>
-      <fieldset className="skillFieldset">
+      <fieldset className="skillFieldset" data-aos="zoom-in-left" data-aos-duration="1000">
         <legend><h3>DESIGN</h3></legend>
         {design[0].map((item,i)=>{
           return(
             <>
               <h4 key={i}>{item}</h4>
               <div className="skillsContainer">
-                <div key={i} className={`skill ${item}`}></div>
+                <div key={i} className={`skill ${item}`}
+                    data-aos="flip-up" 
+                    data-aos-easing="ease-in-back"
+                    data-aos-duration="1500"
+                    data-aos-anchor-placement="bottom-bottom" 
+                    data-aos-offset="0"></div>
               </div>
             </>
           )
         })}
       </fieldset>
-      <fieldset className="skillFieldset">
-        <legend><h3>OTHER</h3></legend>
+      <fieldset className="skillFieldset" data-aos="zoom-in-left" data-aos-duration="1000">
+        <legend><h3>PROFESSIONAL</h3></legend>
         {other[0].map((item,i)=>{
           return(
             <>
               <h4 key={i}>{item.replace('_', ' ')}</h4>
               <div className="skillsContainer">
-                <div key={i} className={`skill ${item}`}></div>
+                <div key={i} className={`skill ${item}`}
+                    data-aos="flip-up" 
+                    data-aos-easing="ease-in-back"
+                    data-aos-duration="1500"
+                    data-aos-anchor-placement="bottom-bottom" 
+                    data-aos-offset="0"></div>
               </div>
             </>
           )
