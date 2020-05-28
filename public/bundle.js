@@ -418,8 +418,17 @@ function Education(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     ref: props.scrollEdu,
     className: "breaker"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "EDUCATION")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "education"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    "data-aos": "fade-down",
+    "data-aos-offset": "0",
+    "data-aos-duration": "600",
+    "data-aos-easing": "ease-in-back"
+  }, "EDUCATION")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: "education",
+    "data-aos": "fade-up",
+    "data-aos-offset": "0",
+    "data-aos-duration": "600",
+    "data-aos-easing": "ease-in-back"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", {
     id: "school"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, _data_education__WEBPACK_IMPORTED_MODULE_1__["default"].map(function (item, i) {
@@ -794,11 +803,7 @@ var Portfolio = /*#__PURE__*/function (_Component) {
         className: "breaker"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "PORTFOLIO")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "portfolio"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
-        src: "http://hotelmagazine.co.nz/2018/04/19/vincent-tran-the-green-room/"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
-        src: "https://www.stuff.co.nz/life-style/food-wine/food-news/103982807/cafe-chat-vince-tran-hotel-sofitel-wellington-bartender"
-      })));
+      }));
     }
   }]);
 
@@ -836,10 +841,17 @@ function Skill(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     ref: props.scrollSkills,
     className: "breaker"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "SKILLS")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "skills"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    "data-aos": "fade-down"
+  }, "SKILLS")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "skills",
+    "data-aos": "fade-up",
+    "data-aos-duration": "600",
+    "data-aos-offset": "0"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("fieldset", {
-    className: "skillFieldset"
+    className: "skillFieldset",
+    "data-aos": "zoom-in-right",
+    "data-aos-duration": "1000"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("legend", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "PROGRAMMING")), programming[0].map(function (item, i) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
       key: i
@@ -847,10 +859,17 @@ function Skill(props) {
       className: "skillsContainer"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       key: i,
-      className: "skill ".concat(item)
+      className: "skill ".concat(item),
+      "data-aos": "flip-up",
+      "data-aos-easing": "ease-in-back",
+      "data-aos-duration": "1500",
+      "data-aos-anchor-placement": "bottom-bottom",
+      "data-aos-offset": "0"
     })));
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("fieldset", {
-    className: "skillFieldset"
+    className: "skillFieldset",
+    "data-aos": "zoom-in-left",
+    "data-aos-duration": "1000"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("legend", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "DESIGN")), design[0].map(function (item, i) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
       key: i
@@ -858,18 +877,30 @@ function Skill(props) {
       className: "skillsContainer"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       key: i,
-      className: "skill ".concat(item)
+      className: "skill ".concat(item),
+      "data-aos": "flip-up",
+      "data-aos-easing": "ease-in-back",
+      "data-aos-duration": "1500",
+      "data-aos-anchor-placement": "bottom-bottom",
+      "data-aos-offset": "0"
     })));
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("fieldset", {
-    className: "skillFieldset"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("legend", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "OTHER")), other[0].map(function (item, i) {
+    className: "skillFieldset",
+    "data-aos": "zoom-in-left",
+    "data-aos-duration": "1000"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("legend", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "PROFESSIONAL")), other[0].map(function (item, i) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
       key: i
     }, item.replace('_', ' ')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "skillsContainer"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       key: i,
-      className: "skill ".concat(item)
+      className: "skill ".concat(item),
+      "data-aos": "flip-up",
+      "data-aos-easing": "ease-in-back",
+      "data-aos-duration": "1500",
+      "data-aos-anchor-placement": "bottom-bottom",
+      "data-aos-offset": "0"
     })));
   }))));
 }
@@ -897,8 +928,17 @@ function WorkDisplay(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     ref: props.scrollWork,
     className: "breaker"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "WORK EXPERIENCE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "workdiv"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    "data-aos": "fade-down",
+    "data-aos-offset": "0",
+    "data-aos-duration": "600",
+    "data-aos-easing": "ease-in-back"
+  }, "WORK EXPERIENCE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "workdiv",
+    "data-aos": "fade-right",
+    "data-aos-offset": "0",
+    "data-aos-easing": "ease-in-back",
+    "data-aos-duration": "600"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "work"
   }, _data_work__WEBPACK_IMPORTED_MODULE_1__["default"].map(function (item, i) {

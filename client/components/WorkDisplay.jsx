@@ -5,9 +5,13 @@ function WorkDisplay (props){
   return(
     <>
       <span ref={props.scrollWork} className="breaker">
-        <h2>WORK EXPERIENCE</h2>
+        <h2 data-aos="fade-down" data-aos-offset="0" data-aos-duration="600" data-aos-easing="ease-in-back">WORK EXPERIENCE</h2>
       </span>
-      <div className="workdiv">
+      <div className="workdiv" 
+        data-aos="fade-right"
+        data-aos-offset="0"
+        data-aos-easing="ease-in-back"
+        data-aos-duration="600">
         <section className="work">
           {work.map((item,i)=>{
             return(
