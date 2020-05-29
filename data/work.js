@@ -1,5 +1,18 @@
 const work = [
   {
+    id: 'devacademy',
+    role: 'Web Developer Apprentice',
+    image: 'images/dev.png',
+    place: 'Dev Academy Wellington',
+    subPlace: 'Piwakawaka Cohort 2020',
+    duration: 'Jan, 2020 - May, 2020',
+    description: [
+      "Modern web framework development within 15 weeks",
+      "Lorem Ipsum",
+      "Lorem Ipsum"
+    ],
+  },
+  {
     id: "rydges",
     role: "Bar Manager",
     image: "images/rydges.jpg",
@@ -17,22 +30,6 @@ const work = [
       "Making roster for the Bar team",
       "Managing resources"
     ],
-    references: [
-      {
-        id: 1,
-        role: "Restaurant Manager",
-        name: "Harry Tran",
-        phone: "+64 27 303 6919",
-        email: "harry_tran@evt.com",
-      },
-      {
-        id: 2,
-        role: "Food & Beverage Manager",
-        name: "Daniel Ghoussoub",
-        phone: "+64 21 405 725",
-        email: "Daniel_Ghoussoub@evt.com"
-      }
-    ]
   },
   {
     id: "sofitel",
@@ -51,22 +48,6 @@ const work = [
       "Maximizing revenue and controling budget",
       "Operating and configure the MICROS system"
     ],
-    references: [
-      {
-        id: 1,
-        role: "Food & Beverage Manager",
-        name: "Kerran Lang",
-        phone: "+64 27 764 0950",
-        email: "kerrandlang@gmail.com",
-      },
-      {
-        id: 2,
-        role: "Human Resources Coordinator",
-        name: "Crystal Sysavath",
-        phone: "+64 21 022 72960",
-        email: "h1991-hr1@accor.com"
-      }
-    ]
   },
   {
     id: "grandmercure",
@@ -85,22 +66,6 @@ const work = [
       "Maximizing revenue and controling budget",
       "Operating and configure the MICROS system"
     ],
-    references: [
-      {
-        id: 1,
-        role: "Food & Beverage Manager",
-        name: "Andrey Spchelkin",
-        phone: "+61 452 563 285",
-        email: "not available",
-      },
-      {
-        id: 2,
-        role: "Human Resources Coordinator",
-        name: "Crystal Sysavath",
-        phone: "+64 21 022 72960",
-        email: "h1991-hr1@accor.com"
-      }
-    ]
   },
   {
     id: "sohobrown",
@@ -118,22 +83,6 @@ const work = [
       "Ensure communication between head office and the shop",
       "Daily cashup report and ordering process"
     ],
-    references: [
-      {
-        id: 1,
-        role: "Former Cafe Manager",
-        name: "Alexandre Paiva",
-        phone: "+64 22 034 5812",
-        email: "Alexandrepaiv@hotmail.com",
-      },
-      {
-        id: 2,
-        role: "Former Assistant Manager",
-        name: "Caroline Nebel",
-        phone: "+64 21 085 04421",
-        email: "not available"
-      }
-    ]
   }
 ]
 

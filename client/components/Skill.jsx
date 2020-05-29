@@ -14,10 +14,12 @@ function Skill(props){
   return(
     <>
     <span ref={props.scrollSkills} className="breaker">
-      <h2 data-aos="fade-down">SKILLS</h2>
+      <h2 data-aos="fade-down" data-aos-duration="500">SKILLS</h2>
     </span>
     <div className="skills"
+      data-aos-anchor-placement="top-bottom"
       data-aos="fade-up"
+      data-aos-easing="ease-in-back"
       data-aos-duration="600"
       data-aos-offset="0">
       <fieldset className="skillFieldset" data-aos="zoom-in-right" data-aos-duration="1000">
@@ -31,7 +33,7 @@ function Skill(props){
                 data-aos="flip-up" 
                 data-aos-easing="ease-in-back"
                 data-aos-duration="1500"
-                data-aos-anchor-placement="bottom-bottom" 
+                data-aos-anchor-placement="top-bottom" 
                 data-aos-offset="0"></div>
             </div>
             </>
@@ -49,7 +51,7 @@ function Skill(props){
                     data-aos="flip-up" 
                     data-aos-easing="ease-in-back"
                     data-aos-duration="1500"
-                    data-aos-anchor-placement="bottom-bottom" 
+                    data-aos-anchor-placement="top-bottom" 
                     data-aos-offset="0"></div>
               </div>
             </>
@@ -67,7 +69,7 @@ function Skill(props){
                     data-aos="flip-up" 
                     data-aos-easing="ease-in-back"
                     data-aos-duration="1500"
-                    data-aos-anchor-placement="bottom-bottom" 
+                    data-aos-anchor-placement="top-bottom" 
                     data-aos-offset="0"></div>
               </div>
             </>

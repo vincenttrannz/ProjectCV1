@@ -420,14 +420,11 @@ function Education(props) {
     className: "breaker"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     "data-aos": "fade-down",
-    "data-aos-offset": "0",
-    "data-aos-duration": "600",
-    "data-aos-easing": "ease-in-back"
+    "data-aos-duration": "500"
   }, "EDUCATION")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "education",
     "data-aos": "fade-up",
-    "data-aos-offset": "0",
-    "data-aos-duration": "600",
+    "data-aos-duration": "500",
     "data-aos-easing": "ease-in-back"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", {
     id: "school"
@@ -842,10 +839,13 @@ function Skill(props) {
     ref: props.scrollSkills,
     className: "breaker"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
-    "data-aos": "fade-down"
+    "data-aos": "fade-down",
+    "data-aos-duration": "500"
   }, "SKILLS")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "skills",
+    "data-aos-anchor-placement": "top-bottom",
     "data-aos": "fade-up",
+    "data-aos-easing": "ease-in-back",
     "data-aos-duration": "600",
     "data-aos-offset": "0"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("fieldset", {
@@ -863,7 +863,7 @@ function Skill(props) {
       "data-aos": "flip-up",
       "data-aos-easing": "ease-in-back",
       "data-aos-duration": "1500",
-      "data-aos-anchor-placement": "bottom-bottom",
+      "data-aos-anchor-placement": "top-bottom",
       "data-aos-offset": "0"
     })));
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("fieldset", {
@@ -881,7 +881,7 @@ function Skill(props) {
       "data-aos": "flip-up",
       "data-aos-easing": "ease-in-back",
       "data-aos-duration": "1500",
-      "data-aos-anchor-placement": "bottom-bottom",
+      "data-aos-anchor-placement": "top-bottom",
       "data-aos-offset": "0"
     })));
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("fieldset", {
@@ -899,7 +899,7 @@ function Skill(props) {
       "data-aos": "flip-up",
       "data-aos-easing": "ease-in-back",
       "data-aos-duration": "1500",
-      "data-aos-anchor-placement": "bottom-bottom",
+      "data-aos-anchor-placement": "top-bottom",
       "data-aos-offset": "0"
     })));
   }))));
@@ -930,15 +930,11 @@ function WorkDisplay(props) {
     className: "breaker"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     "data-aos": "fade-down",
-    "data-aos-offset": "0",
-    "data-aos-duration": "600",
-    "data-aos-easing": "ease-in-back"
+    "data-aos-duration": "500"
   }, "WORK EXPERIENCE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "workdiv",
     "data-aos": "fade-right",
-    "data-aos-offset": "0",
-    "data-aos-easing": "ease-in-back",
-    "data-aos-duration": "600"
+    "data-aos-duration": "500"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "work"
   }, _data_work__WEBPACK_IMPORTED_MODULE_1__["default"].map(function (item, i) {
@@ -962,25 +958,7 @@ function WorkDisplay(props) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         key: i
       }, elem);
-    })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
-      colSpan: "2"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "References"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, item.references.map(function (elem, i) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-        key: i
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, elem.role));
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, item.references.map(function (elem, i) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-        key: i
-      }, elem.name);
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, item.references.map(function (elem, i) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-        key: i
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Phone number: ", elem.phone));
-    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, item.references.map(function (elem, i) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
-        key: i
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Email: ", elem.email));
-    }))));
+    }))))));
   }))));
 }
 
@@ -1072,26 +1050,21 @@ var skill = [{
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 var work = [{
+  id: 'devacademy',
+  role: 'Web Developer Apprentice',
+  image: 'images/dev.png',
+  place: 'Dev Academy Wellington',
+  subPlace: 'Piwakawaka Cohort 2020',
+  duration: 'Jan, 2020 - May, 2020',
+  description: ["Modern web framework development within 15 weeks", "Lorem Ipsum", "Lorem Ipsum"]
+}, {
   id: "rydges",
   role: "Bar Manager",
   image: "images/rydges.jpg",
   place: "Rydges Wellington",
   subPlace: "Portlander Bar & Restaurant",
   duration: "June, 2019 - December, 2019",
-  description: ["Responsible for the bar", "Designing Beverage menu | Cocktail, Wine and Beer", "Staff rostering", "Stock control and management", "Ordering and process purchased order invoices", "Training, recruiting and supervising new and current team member", "Create sequence of services and procedure", "Making roster for the Bar team", "Managing resources"],
-  references: [{
-    id: 1,
-    role: "Restaurant Manager",
-    name: "Harry Tran",
-    phone: "+64 27 303 6919",
-    email: "harry_tran@evt.com"
-  }, {
-    id: 2,
-    role: "Food & Beverage Manager",
-    name: "Daniel Ghoussoub",
-    phone: "+64 21 405 725",
-    email: "Daniel_Ghoussoub@evt.com"
-  }]
+  description: ["Responsible for the bar", "Designing Beverage menu | Cocktail, Wine and Beer", "Staff rostering", "Stock control and management", "Ordering and process purchased order invoices", "Training, recruiting and supervising new and current team member", "Create sequence of services and procedure", "Making roster for the Bar team", "Managing resources"]
 }, {
   id: "sofitel",
   role: "Senior Food and Beverage Supervisor",
@@ -1099,20 +1072,7 @@ var work = [{
   place: "Sofitel Wellington",
   subPlace: "Jardin Grill Restaurant & The Green Room lounge",
   duration: "June, 2016 - May, 2019",
-  description: ["Join the Pre-opening team of a brand new 5 stars hotel", "Responsible for both Bar and Restaurant", "End of month stocktake and process purchase order", "Conference and Event setup", "Training, recruiting and supervising new and current team member", "Making roster for the whole F&B team under manager approval", "Maximizing revenue and controling budget", "Operating and configure the MICROS system"],
-  references: [{
-    id: 1,
-    role: "Food & Beverage Manager",
-    name: "Kerran Lang",
-    phone: "+64 27 764 0950",
-    email: "kerrandlang@gmail.com"
-  }, {
-    id: 2,
-    role: "Human Resources Coordinator",
-    name: "Crystal Sysavath",
-    phone: "+64 21 022 72960",
-    email: "h1991-hr1@accor.com"
-  }]
+  description: ["Join the Pre-opening team of a brand new 5 stars hotel", "Responsible for both Bar and Restaurant", "End of month stocktake and process purchase order", "Conference and Event setup", "Training, recruiting and supervising new and current team member", "Making roster for the whole F&B team under manager approval", "Maximizing revenue and controling budget", "Operating and configure the MICROS system"]
 }, {
   id: "grandmercure",
   role: "Food and Beverage Supervisor",
@@ -1120,40 +1080,14 @@ var work = [{
   place: "Grand Mercure Wellington",
   subPlace: "Forage Bar & Restaurant",
   duration: "Jan, 2017 - Oct, 2017",
-  description: ["Part of Pre-opening team of a re-innovation 4.5 stars Accor hotel chain", "Responsible for both Bar and Restaurant", "End of month stocktake and process purchase order", "Conference and Event setup", "Training, recruiting and supervising new and current team member", "Making roster for the whole F&B team under manager approval", "Maximizing revenue and controling budget", "Operating and configure the MICROS system"],
-  references: [{
-    id: 1,
-    role: "Food & Beverage Manager",
-    name: "Andrey Spchelkin",
-    phone: "+61 452 563 285",
-    email: "not available"
-  }, {
-    id: 2,
-    role: "Human Resources Coordinator",
-    name: "Crystal Sysavath",
-    phone: "+64 21 022 72960",
-    email: "h1991-hr1@accor.com"
-  }]
+  description: ["Part of Pre-opening team of a re-innovation 4.5 stars Accor hotel chain", "Responsible for both Bar and Restaurant", "End of month stocktake and process purchase order", "Conference and Event setup", "Training, recruiting and supervising new and current team member", "Making roster for the whole F&B team under manager approval", "Maximizing revenue and controling budget", "Operating and configure the MICROS system"]
 }, {
   id: "sohobrown",
   role: "Cafe Manager",
   image: "/images/Soho.png",
   place: "Soho Brown's Cafe",
   duration: "Mar, 2015 - May, 2016",
-  description: ["Responsible for operation managing of the premise", "Training, recruiting and supervising new and current team member", "End of month stocktake and process purchase order", "Create sequence of services and procedure", "Training, recruiting and supervising new and current team member", "Making roster for the team", "Ensure communication between head office and the shop", "Daily cashup report and ordering process"],
-  references: [{
-    id: 1,
-    role: "Former Cafe Manager",
-    name: "Alexandre Paiva",
-    phone: "+64 22 034 5812",
-    email: "Alexandrepaiv@hotmail.com"
-  }, {
-    id: 2,
-    role: "Former Assistant Manager",
-    name: "Caroline Nebel",
-    phone: "+64 21 085 04421",
-    email: "not available"
-  }]
+  description: ["Responsible for operation managing of the premise", "Training, recruiting and supervising new and current team member", "End of month stocktake and process purchase order", "Create sequence of services and procedure", "Training, recruiting and supervising new and current team member", "Making roster for the team", "Ensure communication between head office and the shop", "Daily cashup report and ordering process"]
 }];
 /* harmony default export */ __webpack_exports__["default"] = (work);
 

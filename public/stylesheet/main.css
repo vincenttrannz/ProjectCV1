@@ -234,17 +234,18 @@ a{
     font-family: 'Prompt', sans-serif;
     font-size: inherit;
     display: flex;
+    flex-direction: row;
     overflow: auto;
 }
 .work table{
-    display: inline-flex;
+    display: flex;
     white-space: nowrap;
     background-color: white;
     border: outset;
     border-radius: 25px;
     margin: 0 50px 0 20px;
-    width: 100vw;
-    height: 650px;
+    width: 650px;
+    height: auto;
     text-align: left;
     text-align-last: left;
     padding: 20px;
@@ -292,6 +293,12 @@ a{
 #grandmercure{
     text-align-last: center;
 }
+
+#grandmercure img{
+    width: 40%;
+    height: 70%;
+}
+
 #sohobrown{
     text-align-last: center;
 }
