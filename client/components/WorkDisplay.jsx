@@ -22,10 +22,10 @@ function WorkDisplay (props){
                     <td id={item.id} colSpan="2"><img src={item.image} alt={`${item.id} logo`}></img></td>
                   </tr>
                   <tr>
-                    <td colSpan="2">{item.subPlace}</td>
+                    <td id="subPlace" colSpan="2">{item.subPlace}</td>
                   </tr>
                   <tr>
-                    <td colSpan="2"><em>{item.duration}</em></td>
+                    <td id="duration" colSpan="2"><em>{item.duration}</em></td>
                   </tr>
                   <tr>
                     <td colSpan="2">
@@ -42,6 +42,9 @@ function WorkDisplay (props){
               </table> 
             )})
           }
+        </section>
+        <section className='achievement'>
+
         </section>
       </div>
     </>

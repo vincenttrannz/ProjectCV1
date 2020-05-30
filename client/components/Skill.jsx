@@ -22,7 +22,7 @@ function Skill(props){
       data-aos-easing="ease-in-back"
       data-aos-duration="600"
       data-aos-offset="0">
-      <fieldset className="skillFieldset" data-aos="zoom-in-right" data-aos-duration="1000">
+      <fieldset className="skillFieldset">
         <legend><h3>PROGRAMMING</h3></legend>
         {programming[0].map((item,i)=>{
           return(
@@ -40,7 +40,7 @@ function Skill(props){
           )
         })}
       </fieldset>
-      <fieldset className="skillFieldset" data-aos="zoom-in-left" data-aos-duration="1000">
+      <fieldset className="skillFieldset">
         <legend><h3>DESIGN</h3></legend>
         {design[0].map((item,i)=>{
           return(
@@ -58,7 +58,7 @@ function Skill(props){
           )
         })}
       </fieldset>
-      <fieldset className="skillFieldset" data-aos="zoom-in-left" data-aos-duration="1000">
+      <fieldset className="skillFieldset">
         <legend><h3>PROFESSIONAL</h3></legend>
         {other[0].map((item,i)=>{
           return(

@@ -421,7 +421,7 @@ function Education(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     "data-aos": "fade-down",
     "data-aos-duration": "500"
-  }, "EDUCATION")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+  }, "ACADEMIC HISTORY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     className: "education",
     "data-aos": "fade-up",
     "data-aos-duration": "500",
@@ -446,7 +446,11 @@ function Education(props) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
       key: i
     }, item.year, " | ", item.status);
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, _data_education__WEBPACK_IMPORTED_MODULE_1__["default"].map(function (item, i) {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+    style: {
+      textTransform: 'uppercase'
+    }
+  }, _data_education__WEBPACK_IMPORTED_MODULE_1__["default"].map(function (item, i) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
       key: i
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, item.degree));
@@ -637,10 +641,9 @@ var Personal = /*#__PURE__*/function (_React$Component) {
         Resume: "/document/resume.pdf",
         From: "Wellington, New Zealand",
         Ethinicity: "Vietnam",
-        Citizenship: "New Zealand",
-        Birthday: "21st March, 1991",
+        Birthday: "21/03/1991",
         Address: "6A/57 Manners street, Te Aro, Wellington",
-        Phone: "0221575362",
+        Phone: "+64221575362",
         Email: "tranhieunz@gmail.com",
         User: "vincenttrannz"
       },
@@ -680,7 +683,7 @@ var Personal = /*#__PURE__*/function (_React$Component) {
         rowSpan: "1",
         colSpan: "6",
         id: "aboutme"
-      }, "I am an energetic person and passionate about technology. Graduated from ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "Victoria University of Wellington"), " and have been worked many years in hospitality industry, strong in people management and team leading. Just recently, I finished the", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", null, "EDA Bootcamp"), " which strongly focused on ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, "Web Designing"), " and ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, "Programming"), ". With the ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, "'Can-do attitude'"), ", I want to establish a long-term career in Information Technology.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "I am a full stack web developer with strengths in front end development, especially modern web framework ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "React"), ", including ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Redux"), ", ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "JavaScript"), ", ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "NodeJS"), " and ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "SQLite3"), ". The initial stages of my web development education were self-taught, learning through online resources and attending tech meetups. Goal orientated learning drives my code and I am capable of self-directed working, however I love and value being part of a team and working in a shared learning environment."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
         id: "basicinfo"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, personalKey.map(function (item, i) {
         return item.includes('Pic') || item.includes('Resume') || item.includes('User') ? undefined : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
@@ -849,9 +852,7 @@ function Skill(props) {
     "data-aos-duration": "600",
     "data-aos-offset": "0"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("fieldset", {
-    className: "skillFieldset",
-    "data-aos": "zoom-in-right",
-    "data-aos-duration": "1000"
+    className: "skillFieldset"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("legend", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "PROGRAMMING")), programming[0].map(function (item, i) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
       key: i
@@ -867,9 +868,7 @@ function Skill(props) {
       "data-aos-offset": "0"
     })));
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("fieldset", {
-    className: "skillFieldset",
-    "data-aos": "zoom-in-left",
-    "data-aos-duration": "1000"
+    className: "skillFieldset"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("legend", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "DESIGN")), design[0].map(function (item, i) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
       key: i
@@ -885,9 +884,7 @@ function Skill(props) {
       "data-aos-offset": "0"
     })));
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("fieldset", {
-    className: "skillFieldset",
-    "data-aos": "zoom-in-left",
-    "data-aos-duration": "1000"
+    className: "skillFieldset"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("legend", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "PROFESSIONAL")), other[0].map(function (item, i) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
       key: i
@@ -949,8 +946,10 @@ function WorkDisplay(props) {
       src: item.image,
       alt: "".concat(item.id, " logo")
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      id: "subPlace",
       colSpan: "2"
     }, item.subPlace)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      id: "duration",
       colSpan: "2"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", null, item.duration))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
       colSpan: "2"
@@ -959,7 +958,9 @@ function WorkDisplay(props) {
         key: i
       }, elem);
     }))))));
-  }))));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+    className: "achievement"
+  })));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (WorkDisplay);
@@ -1006,17 +1007,17 @@ var education = [{
   image: "/images/victoria.png",
   status: "Graduated",
   degree: "Bachelor of Commerce and Administration",
-  major: "Management and Finance",
-  description: ["Twinning program between Vietnam and New Zealand", "English Proficiency program", "Global Enterprise Entrepreneurship program 2012"]
+  major: "\"Management and Finance\"",
+  description: ["Exchange program of VUW between Vietnam - New Zealand", "Global Enterprise Entrepreneurship Program 2013", "Awarded Successful Leadership during Sustainable Operations (MGMT 312)"]
 }, {
   id: "eda",
   name: "Enspiral Dev Academy",
   year: "February, 2020 - June, 2020",
   image: "/images/eda.svg",
   status: "Graduated",
-  degree: "Web developer and programmer",
-  major: "Web desigining",
-  description: ["Fundatmental Web Designing", "HTML5 + CSS3", "JavaScript", "React, Redux and NodeJs", "Restful API", "Git and Github"]
+  degree: "Web developer",
+  major: "\"Fullstack Web Developer\"",
+  description: ["90% of the course has been done remotely due to COVID-19", "Full-stack SERN (SQL, Express, ReactJs & NodeJS)", "HTML, CSS & JavaScript", "Front-end: React, Redux and NodeJs", "Back-end: ExpressJS with NodeJS"]
 }];
 /* harmony default export */ __webpack_exports__["default"] = (education);
 
@@ -1056,7 +1057,7 @@ var work = [{
   place: 'Dev Academy Wellington',
   subPlace: 'Piwakawaka Cohort 2020',
   duration: 'Jan, 2020 - May, 2020',
-  description: ["Modern web framework development within 15 weeks", "Lorem Ipsum", "Lorem Ipsum"]
+  description: ["Intensive 15 weeks coding academy.", "Emphasis on modern web development frameworks.", "Graduated from the 9 Weeks BootCamp. During this time I developed self-discipline, focus and commitment to learning and working with new technology.", "Developed weekly group projects which allowed me to perform different roles across a full- stack. These challenges allowed us to solidify our knowledge and integrate new technologies.", "The opportunity to take on a variety of roles, including back and front-end lead, management of git branches as well as team leader."]
 }, {
   id: "rydges",
   role: "Bar Manager",
@@ -1064,7 +1065,7 @@ var work = [{
   place: "Rydges Wellington",
   subPlace: "Portlander Bar & Restaurant",
   duration: "June, 2019 - December, 2019",
-  description: ["Responsible for the bar", "Designing Beverage menu | Cocktail, Wine and Beer", "Staff rostering", "Stock control and management", "Ordering and process purchased order invoices", "Training, recruiting and supervising new and current team member", "Create sequence of services and procedure", "Making roster for the Bar team", "Managing resources"]
+  description: ["Flexible management of rostering for the bar staff to minimise the labour cost but still ensure the bar's high quality performance.", "Creating Beverage menu - Cocktail, Wine and Beer.", "Stocktake inventory and use of Microsoft Excel to finalise the process.", "Worked closely with the kitchen staff to create cocktails and wine lists that complimented the food menu.", "Ordering and process purchased order invoices.", "Training, recruiting and supervising new and current team member.", "Communicated with the marketing team for drink promotions and campaigns.", "Led weekly cocktail training and staff meetings to ensure the communication between heads of department with all employees."]
 }, {
   id: "sofitel",
   role: "Senior Food and Beverage Supervisor",
@@ -1072,7 +1073,7 @@ var work = [{
   place: "Sofitel Wellington",
   subPlace: "Jardin Grill Restaurant & The Green Room lounge",
   duration: "June, 2016 - May, 2019",
-  description: ["Join the Pre-opening team of a brand new 5 stars hotel", "Responsible for both Bar and Restaurant", "End of month stocktake and process purchase order", "Conference and Event setup", "Training, recruiting and supervising new and current team member", "Making roster for the whole F&B team under manager approval", "Maximizing revenue and controling budget", "Operating and configure the MICROS system"]
+  description: ["Join the Pre-opening team of a brand new 5 stars hotel", "Communicated with hospitality training organisations to find skilled staff who would fit the workplace culture.", "End of month stocktake and process purchase order", "Managed and led daily operations.", "Training, recruiting and supervising new and current team member.", "Worked closely with the kitchen staff for all upcoming events and marketing campaigns.", "Managed the booking and reservation system.", "Used MICROS system by Oracle to create, display, update and delete menu items."]
 }, {
   id: "grandmercure",
   role: "Food and Beverage Supervisor",
@@ -1080,7 +1081,7 @@ var work = [{
   place: "Grand Mercure Wellington",
   subPlace: "Forage Bar & Restaurant",
   duration: "Jan, 2017 - Oct, 2017",
-  description: ["Part of Pre-opening team of a re-innovation 4.5 stars Accor hotel chain", "Responsible for both Bar and Restaurant", "End of month stocktake and process purchase order", "Conference and Event setup", "Training, recruiting and supervising new and current team member", "Making roster for the whole F&B team under manager approval", "Maximizing revenue and controling budget", "Operating and configure the MICROS system"]
+  description: ["Temporary placement due to closure of Sofitel Wellington.", "Part of Pre-opening team of a re-innovation 4.5 stars Accor hotel chain.", "Responsible for both Bar and Restaurant.", "End of month stocktake and process purchase order.", "Conference and Event setup.", "Training, recruiting and supervising new and current team member.", "Creating roster for the F&B team under manager approval.", "Operating and configure the MICROS system."]
 }, {
   id: "sohobrown",
   role: "Cafe Manager",
