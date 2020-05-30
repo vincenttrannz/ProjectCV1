@@ -16,7 +16,7 @@ const work = [
   },
   {
     id: "rydges",
-    role: "Bar Manager",
+    role: "Bar Supervisor",
     image: "images/rydges.jpg",
     place: "Rydges Wellington",
     subPlace: "Portlander Bar & Restaurant",
@@ -34,7 +34,7 @@ const work = [
   },
   {
     id: "sofitel",
-    role: "Senior Food and Beverage Supervisor",
+    role: "Food & Beverage Supervisor",
     image: "/images/sofitel.png",
     place: "Sofitel Wellington",
     subPlace: "Jardin Grill Restaurant & The Green Room lounge",
@@ -52,7 +52,7 @@ const work = [
   },
   {
     id: "grandmercure",
-    role: "Food and Beverage Supervisor",
+    role: "Food & Beverage Supervisor",
     image: "/images/grandmercure.png",
     place: "Grand Mercure Wellington",
     subPlace: "Forage Bar & Restaurant",

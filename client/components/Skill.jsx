@@ -26,17 +26,17 @@ function Skill(props){
         <legend><h3>PROGRAMMING</h3></legend>
         {programming[0].map((item,i)=>{
           return(
-            <>
-            <h4 key={i}>{item.replace('_', ' & ')}</h4>
+            <div key={i}>
+            <h4>{item.replace('_', ' & ')}</h4>
             <div className="skillsContainer">
-              <div key={i} className={`skill ${item}`}
+              <div className={`skill ${item}`}
                 data-aos="flip-up" 
                 data-aos-easing="ease-in-back"
                 data-aos-duration="1500"
                 data-aos-anchor-placement="top-bottom" 
                 data-aos-offset="0"></div>
             </div>
-            </>
+            </div>
           )
         })}
       </fieldset>
@@ -44,17 +44,17 @@ function Skill(props){
         <legend><h3>DESIGN</h3></legend>
         {design[0].map((item,i)=>{
           return(
-            <>
-              <h4 key={i}>{item}</h4>
+            <div key={i}>
+              <h4>{item}</h4>
               <div className="skillsContainer">
-                <div key={i} className={`skill ${item}`}
+                <div className={`skill ${item}`}
                     data-aos="flip-up" 
                     data-aos-easing="ease-in-back"
                     data-aos-duration="1500"
                     data-aos-anchor-placement="top-bottom" 
                     data-aos-offset="0"></div>
               </div>
-            </>
+            </div>
           )
         })}
       </fieldset>
@@ -62,17 +62,17 @@ function Skill(props){
         <legend><h3>PROFESSIONAL</h3></legend>
         {other[0].map((item,i)=>{
           return(
-            <>
-              <h4 key={i}>{item.replace('_', ' ')}</h4>
+            <div key={i}>
+              <h4>{item.replace('_', ' ')}</h4>
               <div className="skillsContainer">
-                <div key={i} className={`skill ${item}`}
+                <div className={`skill ${item}`}
                     data-aos="flip-up" 
                     data-aos-easing="ease-in-back"
                     data-aos-duration="1500"
                     data-aos-anchor-placement="top-bottom" 
                     data-aos-offset="0"></div>
               </div>
-            </>
+            </div>
           )
         })}
       </fieldset>

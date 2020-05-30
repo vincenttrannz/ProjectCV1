@@ -39,12 +39,9 @@ function WorkDisplay (props){
                     </td>
                   </tr>
                 </tbody>
-              </table> 
+              </table>
             )})
           }
-        </section>
-        <section className='achievement'>
-
         </section>
       </div>
     </>

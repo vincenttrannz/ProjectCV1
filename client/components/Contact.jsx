@@ -39,9 +39,12 @@ class Contact extends React.Component{
     return(
       <>
       <span ref={this.scrollContact.scrollContact} className="breaker">
-        <h2>CONTACT</h2>
+        <h2 data-aos="fade-down" data-aos-duration="500">CONTACT</h2>
       </span>
-      <div className="contactDiv">
+      <div className="contactDiv"
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-easing="ease-in-back">
         <div className="contactPart">
           <form onSubmit={this.handleSubmit}>
             <div id="nameDiv">
