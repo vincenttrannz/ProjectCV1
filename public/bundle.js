@@ -824,7 +824,7 @@ function Skill(props) {
       className: "skill ".concat(item),
       "data-aos": "flip-up",
       "data-aos-easing": "ease-in-back",
-      "data-aos-duration": "1500",
+      "data-aos-duration": "1000",
       "data-aos-anchor-placement": "top-bottom",
       "data-aos-offset": "0"
     })));
@@ -839,7 +839,7 @@ function Skill(props) {
       className: "skill ".concat(item),
       "data-aos": "flip-up",
       "data-aos-easing": "ease-in-back",
-      "data-aos-duration": "1500",
+      "data-aos-duration": "1000",
       "data-aos-anchor-placement": "top-bottom",
       "data-aos-offset": "0"
     })));
@@ -854,7 +854,7 @@ function Skill(props) {
       className: "skill ".concat(item),
       "data-aos": "flip-up",
       "data-aos-easing": "ease-in-back",
-      "data-aos-duration": "1500",
+      "data-aos-duration": "1000",
       "data-aos-anchor-placement": "top-bottom",
       "data-aos-offset": "0"
     })));
