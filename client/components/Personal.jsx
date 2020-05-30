@@ -6,7 +6,7 @@ class Personal extends React.Component{
     this.state = {
       personal: {
         Pic: "/images/profile1.jpg",
-        Resume: "/document/resume.pdf",
+        Resume: "/document/VincentCV.pdf",
         From: "Wellington, New Zealand",
         Ethinicity: "Vietnam",
         Birthday: "21/03/1991",
