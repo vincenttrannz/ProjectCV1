@@ -74,8 +74,8 @@ a{
 }
 #image1{
     padding: 15px;
-    width: 380px;
-    height: 380px;
+    width: 100%;
+    height: 30%;
     border: inset rgb(95, 143, 181);
     background-color: rgb(95, 143, 181);
     border-width: 4px;
@@ -94,7 +94,6 @@ a{
     font-family: 'Proza Libre', sans-serif;
 }
 #aboutme{
-    font-family: 'Proza Libre', sans-serif;
     text-align: justify;
     line-height: 30px;
     border: 3px;
@@ -108,19 +107,12 @@ a{
 #basicinfo{
     animation: opacity 1s;}@keyframes opacity{from{opacity:0} to{opacity: 1}
 }
-#basicinfo th{
-    font-family: 'Kanit', sans-serif;
-    font-size: 18px;
-    padding-left: 40px;
-    line-height: 40px;
+#basicinfo td:first-of-type {
+    font-style: oblique;
 }
 #basicinfo td{
     font-family: 'Libre Franklin', sans-serif;
     line-height: 40px;
-}
-#resume th{
-    font-size: 18px;
-    text-align: center;
 }
 .button, .contactDiv button{
     background-color: lightgray;
@@ -225,8 +217,8 @@ a{
 .workdiv{
     margin-top: 30px;
 }
-
 .work{
+    text-align: justify;
     width: 100vw;
     height: 680px;
     margin-left: auto;
@@ -234,22 +226,22 @@ a{
     font-family: 'Prompt', sans-serif;
     font-size: inherit;
     display: flex;
+    flex-direction: row;
     overflow: auto;
 }
-.work table{
+.work table {
     display: inline-flex;
-    white-space: nowrap;
+    height: auto;
+}
+.work table tbody{
+    width: 500px;
+    white-space: normal;
     background-color: white;
     border: outset;
     border-radius: 25px;
     margin: 0 50px 0 20px;
-    width: 100vw;
-    height: 650px;
-    text-align: left;
-    text-align-last: left;
     padding: 20px;
     letter-spacing: 0.75px;
-    border-spacing: 2px;
 }
 /* WORK EXPERIENCE SCROLL BAR */
 .work::-webkit-scrollbar {
@@ -273,27 +265,34 @@ a{
     font-family: 'Prompt', sans-serif;
     text-align: justify;
     text-align-last: center;
-    font-size: 22px;
+    text-shadow: 2px 2px grey;
+    text-transform: uppercase;
+    font-size: 25px;
     line-height: 40px;
-}
-.work table tr:nth-last-of-type(1){
-    text-align: center;
 }
 .work img{
     height: 70px;
     width: 300px;
 }
-#rydges{
+.work #subPlace{
+    font-size: 18px;
+    font-weight: bold;
+}
+.work #subPlace, .work #duration {
+    text-align: center;
+}
+#rydges, #devacademy, #sofitel, #grandmercure, #sohobrown{
     text-align-last: center;
 }
-#sofitel{
-    text-align-last: center;
+
+#grandmercure img {
+    width: 50%;
+    height: 70%;
 }
-#grandmercure{
-    text-align-last: center;
-}
-#sohobrown{
-    text-align-last: center;
+
+#devacademy img {
+    width: 40%;
+    height: 35%;
 }
 
 /* SKILL CONTENT STYLE */
