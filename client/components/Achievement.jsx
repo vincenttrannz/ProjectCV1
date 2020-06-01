@@ -6,7 +6,6 @@ export class Achievement extends Component {
     super(props)
   }
   render() {
-    console.log(this.props)
     return (
       <>
         <span ref={this.props.scrollAchievement} className="breaker">

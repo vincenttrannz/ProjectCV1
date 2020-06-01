@@ -7,6 +7,6 @@ export const achievement = [
   {
     id: 2,
     name: "Hotel Magazine",
-    url: "http://hotelmagazine.co.nz/2018/04/19/vincent-tran-the-green-room/"
+    url: "https://www.google.ie/gwt/x?u=http://hotelmagazine.co.nz/2018/04/19/vincent-tran-the-green-room/"
   },
 ]

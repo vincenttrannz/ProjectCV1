@@ -90,22 +90,22 @@
 /*!*******************************!*\
   !*** ./client/api/contact.js ***!
   \*******************************/
-/*! exports provided: saveContact, sendEmail */
+/*! exports provided: sendEmail */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "saveContact", function() { return saveContact; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sendEmail", function() { return sendEmail; });
 /* harmony import */ var superagent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! superagent */ "./node_modules/superagent/lib/client.js");
 /* harmony import */ var superagent__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(superagent__WEBPACK_IMPORTED_MODULE_0__);
+ // const contactUrl = '/api/v1/contacts'
+// export function saveContact(contact){
+//   return request
+//   .post(contactUrl)
+//   .send(contact)
+//   .then(res => res.body)
+// }
 
-var contactUrl = '/api/v1/contacts';
-function saveContact(contact) {
-  return superagent__WEBPACK_IMPORTED_MODULE_0___default.a.post(contactUrl).send(contact).then(function (res) {
-    return res.body;
-  });
-}
 function sendEmail(email) {
   return superagent__WEBPACK_IMPORTED_MODULE_0___default.a.post('/api/v1/sendEmail').send(email).then(function (res) {
     return res.body;
@@ -165,7 +165,6 @@ var Achievement = /*#__PURE__*/function (_Component) {
   _createClass(Achievement, [{
     key: "render",
     value: function render() {
-      console.log(this.props);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         ref: this.props.scrollAchievement,
         className: "breaker"
@@ -399,7 +398,6 @@ var Contact = /*#__PURE__*/function (_React$Component) {
 
     _defineProperty(_assertThisInitialized(_this), "handleSubmit", function (event) {
       event.preventDefault();
-      Object(_api_contact__WEBPACK_IMPORTED_MODULE_1__["saveContact"])(_this.state);
       Object(_api_contact__WEBPACK_IMPORTED_MODULE_1__["sendEmail"])(_this.state).then(_this.resetForm);
     });
 
@@ -965,7 +963,7 @@ var achievement = [{
 }, {
   id: 2,
   name: "Hotel Magazine",
-  url: "http://hotelmagazine.co.nz/2018/04/19/vincent-tran-the-green-room/"
+  url: "https://www.google.ie/gwt/x?u=http://hotelmagazine.co.nz/2018/04/19/vincent-tran-the-green-room/"
 }];
 
 /***/ }),
