@@ -1,5 +1,5 @@
 import React from 'react'
-import { sendEmail, saveContact } from '../api/contact'
+import { sendEmail } from '../api/contact'
 class Contact extends React.Component{
   constructor(props){
     super(props)
@@ -21,7 +21,6 @@ class Contact extends React.Component{
 
   handleSubmit = (event) =>{
     event.preventDefault()
-    saveContact(this.state)
     sendEmail(this.state)
     .then(this.resetForm)
   }
