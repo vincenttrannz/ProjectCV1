@@ -1,13 +1,11 @@
 import request from 'superagent'
 
-// const contactUrl = '/api/v1/contacts'
-
-// export function saveContact(contact){
-//   return request
-//   .post(contactUrl)
-//   .send(contact)
-//   .then(res => res.body)
-// }
+export function saveContact(contact){
+  return request
+  .post('/api/v1/contacts')
+  .send(contact)
+  .then(res => res.body)
+}
 
 export function sendEmail(email){
   return request

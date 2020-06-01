@@ -90,22 +90,21 @@
 /*!*******************************!*\
   !*** ./client/api/contact.js ***!
   \*******************************/
-/*! exports provided: sendEmail */
+/*! exports provided: saveContact, sendEmail */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "saveContact", function() { return saveContact; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sendEmail", function() { return sendEmail; });
 /* harmony import */ var superagent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! superagent */ "./node_modules/superagent/lib/client.js");
 /* harmony import */ var superagent__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(superagent__WEBPACK_IMPORTED_MODULE_0__);
- // const contactUrl = '/api/v1/contacts'
-// export function saveContact(contact){
-//   return request
-//   .post(contactUrl)
-//   .send(contact)
-//   .then(res => res.body)
-// }
 
+function saveContact(contact) {
+  return superagent__WEBPACK_IMPORTED_MODULE_0___default.a.post('/api/v1/contacts').send(contact).then(function (res) {
+    return res.body;
+  });
+}
 function sendEmail(email) {
   return superagent__WEBPACK_IMPORTED_MODULE_0___default.a.post('/api/v1/sendEmail').send(email).then(function (res) {
     return res.body;
