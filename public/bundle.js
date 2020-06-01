@@ -100,7 +100,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var superagent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! superagent */ "./node_modules/superagent/lib/client.js");
 /* harmony import */ var superagent__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(superagent__WEBPACK_IMPORTED_MODULE_0__);
 
-var contactUrl = 'http://localhost:3000/api/v1/contacts';
+var contactUrl = '/api/v1/contacts';
 function saveContact(contact) {
   return superagent__WEBPACK_IMPORTED_MODULE_0___default.a.post(contactUrl).send(contact).then(function (res) {
     return res.body;

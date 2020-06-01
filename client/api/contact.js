@@ -1,6 +1,6 @@
 import request from 'superagent'
 
-const contactUrl = 'http://localhost:3000/api/v1/contacts'
+const contactUrl = '/api/v1/contacts'
 
 export function saveContact(contact){
   return request
