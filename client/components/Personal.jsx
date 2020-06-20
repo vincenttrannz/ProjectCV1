@@ -6,13 +6,12 @@ class Personal extends React.Component{
     this.state = {
       personal: {
         Pic: "/images/profile1.jpg",
-        Resume: "/document/resume.pdf",
+        Resume: "/document/VincentCV.pdf",
         From: "Wellington, New Zealand",
         Ethinicity: "Vietnam",
-        Citizenship: "New Zealand",
-        Birthday: "21st March, 1991",
+        Birthday: "21/03/1991",
         Address: "6A/57 Manners street, Te Aro, Wellington",
-        Phone: "0221575362",
+        Phone: "+64221575362",
         Email: "tranhieunz@gmail.com",
         User: "vincenttrannz"
       },
@@ -42,11 +41,11 @@ class Personal extends React.Component{
             </tr>
             <tr>
               <td rowSpan="1" colSpan="6" id="aboutme">
-              I am an energetic person and passionate about technology. Graduated from <strong>Victoria University of Wellington</strong> and
-              have been worked many years in hospitality industry, strong in people management and team leading. Just recently, I finished the
-              <strong>EDA Bootcamp</strong> which strongly focused on <em>Web Designing</em> and <em>Programming</em>. 
-              With the <em>'Can-do attitude'</em>, I want to establish a long-term career
-              in Information Technology.
+                <p>
+                  I am a full stack web developer with strengths in front end development, especially modern web framework <b>React</b>, including <b>Redux</b>, <b>JavaScript</b>, <b>NodeJS</b> and <b>SQLite3</b>. 
+                  The initial stages of my web development education were self-taught, learning through online resources and attending tech meetups. 
+                  Goal orientated learning drives my code and I am capable of self-directed working, however I love and value being part of a team and working in a shared learning environment.
+                </p>
               </td>
             </tr>
             <tr id="basicinfo">

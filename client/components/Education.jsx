@@ -5,9 +5,12 @@ function Education(props){
   return(
     <>
     <span ref={props.scrollEdu} className="breaker">
-      <h2>EDUCATION</h2>
+      <h2 data-aos="fade-down" data-aos-duration="500">ACADEMIC HISTORY</h2>
     </span>
-    <section className="education">
+    <section className="education" 
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-easing="ease-in-back">
       <table>
         <thead id="school">
           <tr>
@@ -27,7 +30,7 @@ function Education(props){
               return(<td key={i}>{item.year} | {item.status}</td>)
             })}
           </tr>
-          <tr>
+          <tr style={{textTransform: 'uppercase'}}>
             {education.map((item, i)=>{
               return(<td key={i}><strong>{item.degree}</strong></td>)
             })}

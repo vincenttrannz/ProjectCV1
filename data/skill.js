@@ -3,7 +3,6 @@ const skill = [{
     "html_css",
     "bootstrap",
     "javascript",
-    "python",
     "react",
     "redux",
     "nodejs",

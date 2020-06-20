@@ -1,5 +1,5 @@
 import React from 'react'
-import { sendEmail, saveContact } from '../api/contact'
+import { sendEmail } from '../api/contact'
 class Contact extends React.Component{
   constructor(props){
     super(props)
@@ -21,7 +21,6 @@ class Contact extends React.Component{
 
   handleSubmit = (event) =>{
     event.preventDefault()
-    saveContact(this.state)
     sendEmail(this.state)
     .then(this.resetForm)
   }
@@ -39,9 +38,12 @@ class Contact extends React.Component{
     return(
       <>
       <span ref={this.scrollContact.scrollContact} className="breaker">
-        <h2>CONTACT</h2>
+        <h2 data-aos="fade-down" data-aos-duration="500">CONTACT</h2>
       </span>
-      <div className="contactDiv">
+      <div className="contactDiv"
+      data-aos="fade-up"
+      data-aos-duration="500"
+      data-aos-easing="ease-in-back">
         <div className="contactPart">
           <form onSubmit={this.handleSubmit}>
             <div id="nameDiv">

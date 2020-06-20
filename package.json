@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server",
+    "postinstall": "knex migrate:latest",
     "build": "webpack",
     "dev": "nodemon server & webpack --watch"
   },

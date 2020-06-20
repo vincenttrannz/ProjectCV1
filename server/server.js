@@ -3,7 +3,6 @@ const express = require('express')
 const sendEmail = require('./routes/sendEmail')
 const contacts = require('./routes/contacts')
 
-
 const server = express()
 
 server.use(express.json())

@@ -6,11 +6,11 @@ const education = [
     image: "/images/victoria.png",
     status: "Graduated",
     degree: "Bachelor of Commerce and Administration",
-    major: "Management and Finance",
+    major: `"Management and Finance"`,
     description: [
-      "Twinning program between Vietnam and New Zealand",
-      "English Proficiency program",
-      "Global Enterprise Entrepreneurship program 2012",
+      "Exchange program of VUW between Vietnam - New Zealand",
+      "Global Enterprise Entrepreneurship Program 2013",
+      "Awarded Successful Leadership during Sustainable Operations (MGMT 312)",
     ]
   },
   {
@@ -19,15 +19,14 @@ const education = [
     year: "February, 2020 - June, 2020",
     image: "/images/eda.svg",
     status: "Graduated",
-    degree: "Web developer and programmer",
-    major: "Web desigining",
+    degree: "Web developer",
+    major: `"Fullstack Web Developer"`,
     description: [
-      "Fundatmental Web Designing",
-      "HTML5 + CSS3",
-      "JavaScript",
-      "React, Redux and NodeJs",
-      "Restful API",
-      "Git and Github"
+      "90% of the course has been done remotely due to COVID-19",
+      "Full-stack SERN (SQL, Express, ReactJs & NodeJS)",
+      "HTML, CSS & JavaScript",
+      "Front-end: React, Redux and NodeJs",
+      "Back-end: ExpressJS with NodeJS",
     ]
   }
 ]

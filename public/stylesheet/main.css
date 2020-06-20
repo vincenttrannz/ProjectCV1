@@ -74,8 +74,8 @@ a{
 }
 #image1{
     padding: 15px;
-    width: 380px;
-    height: 380px;
+    width: 100%;
+    height: 30%;
     border: inset rgb(95, 143, 181);
     background-color: rgb(95, 143, 181);
     border-width: 4px;
@@ -94,7 +94,6 @@ a{
     font-family: 'Proza Libre', sans-serif;
 }
 #aboutme{
-    font-family: 'Proza Libre', sans-serif;
     text-align: justify;
     line-height: 30px;
     border: 3px;
@@ -108,19 +107,12 @@ a{
 #basicinfo{
     animation: opacity 1s;}@keyframes opacity{from{opacity:0} to{opacity: 1}
 }
-#basicinfo th{
-    font-family: 'Kanit', sans-serif;
-    font-size: 18px;
-    padding-left: 40px;
-    line-height: 40px;
+#basicinfo td:first-of-type {
+    font-style: oblique;
 }
 #basicinfo td{
     font-family: 'Libre Franklin', sans-serif;
     line-height: 40px;
-}
-#resume th{
-    font-size: 18px;
-    text-align: center;
 }
 .button, .contactDiv button{
     background-color: lightgray;
@@ -225,8 +217,8 @@ a{
 .workdiv{
     margin-top: 30px;
 }
-
 .work{
+    text-align: justify;
     width: 100vw;
     height: 680px;
     margin-left: auto;
@@ -234,22 +226,22 @@ a{
     font-family: 'Prompt', sans-serif;
     font-size: inherit;
     display: flex;
+    flex-direction: row;
     overflow: auto;
 }
-.work table{
+.work table {
     display: inline-flex;
-    white-space: nowrap;
+    height: auto;
+}
+.work table tbody{
+    width: 500px;
+    white-space: normal;
     background-color: white;
     border: outset;
     border-radius: 25px;
     margin: 0 50px 0 20px;
-    width: 100vw;
-    height: 650px;
-    text-align: left;
-    text-align-last: left;
     padding: 20px;
     letter-spacing: 0.75px;
-    border-spacing: 2px;
 }
 /* WORK EXPERIENCE SCROLL BAR */
 .work::-webkit-scrollbar {
@@ -270,30 +262,49 @@ a{
 }
 /* FONT STYLE FOR WORK EXPERIENCE */
 .work table th:nth-of-type(1){
+    width: 100vw;
     font-family: 'Prompt', sans-serif;
-    text-align: justify;
-    text-align-last: center;
-    font-size: 22px;
-    line-height: 40px;
-}
-.work table tr:nth-last-of-type(1){
     text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 40px;
 }
 .work img{
     height: 70px;
     width: 300px;
 }
-#rydges{
+.work #subPlace{
+    font-size: 18px;
+    font-weight: bold;
+}
+.work #subPlace, .work #duration {
+    text-align: center;
+}
+#rydges, #devacademy, #sofitel, #grandmercure, #sohobrown{
     text-align-last: center;
 }
-#sofitel{
-    text-align-last: center;
+
+#grandmercure img {
+    width: 50%;
+    height: 70%;
 }
-#grandmercure{
-    text-align-last: center;
+
+#devacademy img {
+    width: 40%;
+    height: 35%;
 }
-#sohobrown{
-    text-align-last: center;
+
+/* ACHIEVEMENT */
+.work .achievement tbody{
+    margin: 0 35px 0 35px;
+    width: 45vw;
+}
+
+.work iframe {
+    border: 2px gainsboro solid;
+    border-radius: 15px;
+    width: 100%;
+    height: 580px;
 }
 
 /* SKILL CONTENT STYLE */
@@ -306,10 +317,12 @@ a{
     border: outset;
     border-radius: 15px;
     width: 85vw;
+    height: 100%;
     padding: 20px;
 }
 .skillFieldset{
     display: flex;
+    flex-direction: column;
     width: 45%;
     text-align: left;
     margin-bottom: 15px;
@@ -319,13 +332,6 @@ a{
     border-radius: 15px;
     padding: 0 25px 25px 25px;
     background-color: rgb(240, 240, 240);
-}
-.skillFieldset:nth-of-type(1){
-    margin-left: 3%;
-    float: left;
-}
-.skillFieldset:nth-of-type(3){
-    margin-top: 87px;
 }
 .skillFieldset legend{
     background-color: white;
@@ -350,6 +356,11 @@ a{
     padding-left: 5px;
     font-style: oblique;
     font-size: 1.25rem;
+}
+
+.skillFieldset:nth-of-type(1){
+    float: left;
+    margin-left: 3%;
 }
 .skillsContainer{
     border: inset 1.5px;
@@ -376,9 +387,6 @@ a{
 }
 .javascript{
     width: 80%;
-}
-.python{
-    width: 50%;
 }
 .react{
     width: 75%;
@@ -418,66 +426,6 @@ a{
 }
 .tenacious{
     width: 90%;
-}
-
-
-/* ACHIEVEMENT CONTENT STYLE */
-.achievement{
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    border: outset;
-    border-radius: 15px;
-    padding: 15px 15px;
-    width: 85vw;
-}
-#achievementTable{
-    height: 500px;
-    width: 82vw;
-    text-align: center;
-}
-.achievementPic{
-    position: relative;
-}
-.middle{
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-.achievementPic:hover #pic1{
-    opacity: 0.3; 
-}
-.achievementPic:hover #pic2{
-    opacity: 0.3; 
-}
-.achievementPic:hover .middle{
-    opacity: 1;
-}
-  
-.text{
-    color: rgb(116, 114, 28);
-    font-family: 'Proza Libre', sans-serif;
-    font-size: 24px;
-    padding: 16px 32px;
-}
-#pic1{
-    opacity: 1;
-    transition: 0.5s ease;
-    backface-visibility: unset;
-    height: 500px;
-    width: 20vw;
-}
-#pic2{
-    opacity: 1;
-    transition: 0.5s ease;
-    backface-visibility: hidden;
-    height: 500px;
-    width: 60vw;
 }
 
 /* CONTACT */
@@ -531,24 +479,5 @@ input[type=text], input[type=email], textarea{
     margin: 8px 0;
 }
 
-/* PORTFOLIO */
-.portfolio{
-    display: block;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    border: outset;
-    border-radius: 15px;
-    width: 85vw;
-    height: 800px;
-    padding: 20px;
-}
 
-.portfolio iframe{
-    margin: 1%;
-    width: 48%;
-    height: 100%;
-    border: solid 1px gray;
-    border-radius: 15px;
-}
+
