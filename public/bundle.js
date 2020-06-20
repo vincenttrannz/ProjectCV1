@@ -829,7 +829,10 @@ function Skill(props) {
     className: "skillFieldset"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("legend", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "DESIGN")), design[0].map(function (item, i) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-      key: i
+      key: i,
+      style: {
+        display: 'block'
+      }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, item), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "skillsContainer"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -962,7 +965,7 @@ var achievement = [{
 }, {
   id: 2,
   name: "Hotel Magazine",
-  url: "https://www.google.ie/gwt/x?u=http://hotelmagazine.co.nz/2018/04/19/vincent-tran-the-green-room/"
+  url: "http://hotelmagazine.co.nz/2018/04/19/vincent-tran-the-green-room/"
 }];
 
 /***/ }),
@@ -1009,7 +1012,7 @@ var education = [{
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 var skill = [{
-  programming: ["html_css", "bootstrap", "javascript", "python", "react", "redux", "nodejs", "git", "sqlite3"],
+  programming: ["html_css", "bootstrap", "javascript", "react", "redux", "nodejs", "git", "sqlite3"],
   design: ["photoshop", "lightroom", "photography"],
   other: ["customer_service", "leadership", "teamwork", "tenacious"]
 }];

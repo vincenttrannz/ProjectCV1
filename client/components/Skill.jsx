@@ -44,7 +44,7 @@ function Skill(props){
         <legend><h3>DESIGN</h3></legend>
         {design[0].map((item,i)=>{
           return(
-            <div key={i}>
+            <div key={i} style={{display: 'block'}}>
               <h4>{item}</h4>
               <div className="skillsContainer">
                 <div className={`skill ${item}`}
@@ -52,7 +52,8 @@ function Skill(props){
                     data-aos-easing="ease-in-back"
                     data-aos-duration="1000"
                     data-aos-anchor-placement="top-bottom" 
-                    data-aos-offset="0"></div>
+                    data-aos-offset="0">
+                </div>
               </div>
             </div>
           )
