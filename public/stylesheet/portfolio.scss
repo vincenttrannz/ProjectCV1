@@ -1,0 +1,74 @@
+// PORTFOLIO PAGE
+$max-height: 800px;
+$max-width: 90%;
+
+$full-height: 100%;
+$full-width: 100%;
+
+$default-font-size: 1rem;
+$light-weight: 300;
+$medium-weight: 500;
+$heavy-weight: 700;
+
+
+.portfolio{
+  display: flex;
+  justify-content: center;
+  margin: 120px auto;
+  &__card {
+    height: $max-height;
+    width: $max-width;
+    border: outset 3px;
+    border-radius: 12px;
+    background-color: whitesmoke;
+  };
+  &__project {
+    float: left;
+    width: 35%;
+    height: inherit;
+    iframe{
+      margin: 2rem;
+      border: 2px outset gray;
+      border-radius: 12px;
+    }
+  }
+  &__article{
+    float: right;
+    margin: auto;
+    padding: 2rem;
+    width: 60%;
+    height: inherit;
+  }
+}
+
+.is{
+  &__title{
+    font-size: $default-font-size * 3;
+    font-weight: $heavy-weight;
+  };
+  &__subtitle{
+    font-size: $default-font-size * 2;
+    font-weight: $medium-weight;
+  };
+  &__paragraph{
+    font-size: $default-font-size;
+    font-weight: $light-weight;
+    text-align: justify;
+  }
+}
+
+.panel{
+  height: 50%;
+  &__left{
+    border: 2px solid black;
+    float: left;
+    width: $full-width/2.2;
+    height: $full-height;
+  };
+  &__right{
+    border: 2px solid black;
+    float: right;
+    width: $full-width/2.2;
+    height: $full-height;
+  };
+}

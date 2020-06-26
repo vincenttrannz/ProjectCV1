@@ -212,6 +212,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Skill__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Skill */ "./client/components/Skill.jsx");
 /* harmony import */ var _Contact__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Contact */ "./client/components/Contact.jsx");
 /* harmony import */ var _Achievement__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Achievement */ "./client/components/Achievement.jsx");
+/* harmony import */ var _Portfolio__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Portfolio */ "./client/components/Portfolio.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -235,6 +236,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 
 
 
@@ -329,7 +331,10 @@ var App = /*#__PURE__*/function (_React$Component) {
         scrollEdu: this.scrollEdu
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Contact__WEBPACK_IMPORTED_MODULE_7__["default"], {
         scrollContact: this.scrollContact
-      }))));
+      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+        exact: true,
+        path: "/portfolio"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Portfolio__WEBPACK_IMPORTED_MODULE_9__["default"], null))));
     }
   }]);
 
@@ -772,6 +777,100 @@ var Personal = /*#__PURE__*/function (_React$Component) {
 
 /***/ }),
 
+/***/ "./client/components/Portfolio.jsx":
+/*!*****************************************!*\
+  !*** ./client/components/Portfolio.jsx ***!
+  \*****************************************/
+/*! exports provided: Portfolio, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Portfolio", function() { return Portfolio; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _data_portfolio__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../data/portfolio */ "./data/portfolio.js");
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+
+
+var Portfolio = /*#__PURE__*/function (_Component) {
+  _inherits(Portfolio, _Component);
+
+  var _super = _createSuper(Portfolio);
+
+  function Portfolio() {
+    _classCallCheck(this, Portfolio);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Portfolio, [{
+    key: "render",
+    value: function render() {
+      var portfolioClass = "portfolio";
+      var panel = "panel";
+      return _data_portfolio__WEBPACK_IMPORTED_MODULE_1__["default"].map(function (project) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          key: project.id,
+          className: portfolioClass
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "".concat(portfolioClass, "__card")
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "".concat(portfolioClass, "__project")
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+          src: project.url,
+          height: "90%",
+          width: "100%"
+        })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "".concat(portfolioClass, "__article")
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+          className: "is__title"
+        }, "Project 1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          className: "is__paragraph"
+        }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut arcu consequat, dictum magna a, euismod metus. Aliquam ornare metus quis ex egestas tristique. Pellentesque eu velit imperdiet, fermentum felis pulvinar, venenatis ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue quam dolor, ac condimentum est ultricies vitae. Fusce mollis tellus mauris, aliquet convallis nisi facilisis in. Fusce eu leo vestibulum, rutrum arcu id, rutrum elit. Donec finibus pellentesque rhoncus. Fusce convallis non velit ac ultrices. Praesent commodo hendrerit lectus nec efficitur. Vivamus a metus blandit nunc sollicitudin blandit. Nunc sed ante vel risus vulputate elementum quis quis massa. Sed nec viverra ligula. In dolor ex, faucibus at ex eget, elementum venenatis orci."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+          className: "is__paragraph"
+        }, "Pellentesque eget tempor justo, eget cursus ante. In pulvinar, magna non vehicula sollicitudin, lacus dui lobortis ipsum, quis molestie nibh libero nec justo. Duis tincidunt nunc eu tortor rutrum ultrices auctor et justo. Proin libero justo, lobortis vel dui sit amet, ornare tempus magna. Integer suscipit augue vel tempor tincidunt. Donec orci enim, consectetur at molestie eget, lacinia a massa. Vivamus facilisis mi et augue laoreet varius sed quis tortor. Cras commodo tristique elit sit amet lacinia."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: panel
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "".concat(panel, "__left")
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+          className: "is__subtitle"
+        }, "Technologies")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "".concat(panel, "__right")
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+          className: "is__subtitle"
+        }, "Personal"))))));
+      });
+    }
+  }]);
+
+  return Portfolio;
+}(react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+/* harmony default export */ __webpack_exports__["default"] = (Portfolio);
+
+/***/ }),
+
 /***/ "./client/components/Skill.jsx":
 /*!*************************************!*\
   !*** ./client/components/Skill.jsx ***!
@@ -999,6 +1098,32 @@ var education = [{
   description: ["90% of the course has been done remotely due to COVID-19", "Full-stack SERN (SQL, Express, ReactJs & NodeJS)", "HTML, CSS & JavaScript", "Front-end: React, Redux and NodeJs", "Back-end: ExpressJS with NodeJS"]
 }];
 /* harmony default export */ __webpack_exports__["default"] = (education);
+
+/***/ }),
+
+/***/ "./data/portfolio.js":
+/*!***************************!*\
+  !*** ./data/portfolio.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var portfolio = [{
+  id: 1,
+  url: "https://lockdown-entertainment.herokuapp.com/"
+}, {
+  id: 2,
+  url: "https://mortyfighterturboedition.herokuapp.com/#/selection"
+}, {
+  id: 3,
+  url: "https://trakphatstax.herokuapp.com/#/"
+}, {
+  id: 4,
+  url: "https://spacepants.herokuapp.com/#/"
+}];
+/* harmony default export */ __webpack_exports__["default"] = (portfolio);
 
 /***/ }),
 

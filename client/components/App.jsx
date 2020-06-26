@@ -8,6 +8,7 @@ import WorkDisplay from './WorkDisplay'
 import Skill from './Skill'
 import Contact from './Contact'
 import Achievement from './Achievement';
+import Portfolio from './Portfolio';
 
 class App extends React.Component{
   scrollEdu = createRef();
@@ -56,6 +57,9 @@ class App extends React.Component{
             <Achievement scrollAchievement={this.scrollAchievement}/>
             <Education scrollEdu={this.scrollEdu}></Education>
             <Contact scrollContact={this.scrollContact}></Contact>
+          </Route>
+          <Route exact path="/portfolio">
+            <Portfolio/>
           </Route>
         </Router>
       </>
