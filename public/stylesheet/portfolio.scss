@@ -38,6 +38,9 @@ $heavy-weight: 700;
     padding: 2rem;
     width: 60%;
     height: inherit;
+    &__body{
+      height: 60%;
+    }
   }
 }
 
@@ -52,13 +55,12 @@ $heavy-weight: 700;
   };
   &__paragraph{
     font-size: $default-font-size;
-    font-weight: $light-weight;
     text-align: justify;
   }
 }
 
 .panel{
-  height: 50%;
+  height: 40%;
   &__left{
     border: 2px solid black;
     float: left;

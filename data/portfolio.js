@@ -1,19 +1,26 @@
 const portfolio = [
   {
     id: 1,
-    url: "https://lockdown-entertainment.herokuapp.com/"
+    name: "NetFlock - Lockdown Entertainment",
+    url: "https://lockdown-entertainment.herokuapp.com/",
   },
   {
     id: 2,
-    url: "https://mortyfighterturboedition.herokuapp.com/#/selection"
+    name: "Morty Fighter - Deluxe Edition",
+    url: "https://mortyfighterturboedition.herokuapp.com/#/selection",
+    article: ""
   },
   {
     id: 3,
-    url: "https://trakphatstax.herokuapp.com/#/"
+    name: "TrakPhat$tax",
+    url: "https://trakphatstax.herokuapp.com/#/",
+    article: ""
   },
   {
     id: 4,
-    url: "https://spacepants.herokuapp.com/#/"
+    name: "SpacePants",
+    url: "https://spacepants.herokuapp.com/#/",
+    article: ""
   },
 ]
 

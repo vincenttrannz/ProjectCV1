@@ -828,6 +828,35 @@ var Portfolio = /*#__PURE__*/function (_Component) {
   _createClass(Portfolio, [{
     key: "render",
     value: function render() {
+      var article = function article(data) {
+        switch (data.id) {
+          case 1:
+            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+              className: "is__paragraph"
+            }, "This is our first group project at DEV Academy during the COVID-19 lockdown. At the beginning of the week, we learned new concept of building a website by using ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "HandlebarsJS"), ". Our team included myself, Alice, Josh and Kevin, we came up with the idea to build a simple website where people can use to share great Youtube video that can help to entertain others with lockdown situation. My role of the project was a ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "\"Lead Developer\""), ". I was responsible for setting up the ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Github repo"), ", prepare some basic ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "NPM packages"), " and create some templates for the team. I also took care for almost the styling of the page by using ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "CSS"), " and ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Animate.CSS"), " to handle animation."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+              className: "is__paragraph"
+            }, "As this is our first remote group project, we have realized that we were lack of communication during the process. We didn't have any stand"));
+
+          case 2:
+            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+              className: "is__paragraph"
+            }, "hello 2");
+
+          case 3:
+            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+              className: "is__paragraph"
+            }, "hello 3");
+
+          case 4:
+            return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+              className: "is__paragraph"
+            }, "hello 4");
+
+          default:
+            return true;
+        }
+      };
+
       var portfolioClass = "portfolio";
       var panel = "panel";
       return _data_portfolio__WEBPACK_IMPORTED_MODULE_1__["default"].map(function (project) {
@@ -844,13 +873,11 @@ var Portfolio = /*#__PURE__*/function (_Component) {
           width: "100%"
         })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "".concat(portfolioClass, "__article")
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+          className: "".concat(portfolioClass, "__article__body")
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
           className: "is__title"
-        }, "Project 1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-          className: "is__paragraph"
-        }, "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut arcu consequat, dictum magna a, euismod metus. Aliquam ornare metus quis ex egestas tristique. Pellentesque eu velit imperdiet, fermentum felis pulvinar, venenatis ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue quam dolor, ac condimentum est ultricies vitae. Fusce mollis tellus mauris, aliquet convallis nisi facilisis in. Fusce eu leo vestibulum, rutrum arcu id, rutrum elit. Donec finibus pellentesque rhoncus. Fusce convallis non velit ac ultrices. Praesent commodo hendrerit lectus nec efficitur. Vivamus a metus blandit nunc sollicitudin blandit. Nunc sed ante vel risus vulputate elementum quis quis massa. Sed nec viverra ligula. In dolor ex, faucibus at ex eget, elementum venenatis orci."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-          className: "is__paragraph"
-        }, "Pellentesque eget tempor justo, eget cursus ante. In pulvinar, magna non vehicula sollicitudin, lacus dui lobortis ipsum, quis molestie nibh libero nec justo. Duis tincidunt nunc eu tortor rutrum ultrices auctor et justo. Proin libero justo, lobortis vel dui sit amet, ornare tempus magna. Integer suscipit augue vel tempor tincidunt. Donec orci enim, consectetur at molestie eget, lacinia a massa. Vivamus facilisis mi et augue laoreet varius sed quis tortor. Cras commodo tristique elit sit amet lacinia."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        }, project.name), article(project)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: panel
         }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "".concat(panel, "__left")
@@ -1112,16 +1139,23 @@ var education = [{
 __webpack_require__.r(__webpack_exports__);
 var portfolio = [{
   id: 1,
+  name: "NetFlock - Lockdown Entertainment",
   url: "https://lockdown-entertainment.herokuapp.com/"
 }, {
   id: 2,
-  url: "https://mortyfighterturboedition.herokuapp.com/#/selection"
+  name: "Morty Fighter - Deluxe Edition",
+  url: "https://mortyfighterturboedition.herokuapp.com/#/selection",
+  article: ""
 }, {
   id: 3,
-  url: "https://trakphatstax.herokuapp.com/#/"
+  name: "TrakPhat$tax",
+  url: "https://trakphatstax.herokuapp.com/#/",
+  article: ""
 }, {
   id: 4,
-  url: "https://spacepants.herokuapp.com/#/"
+  name: "SpacePants",
+  url: "https://spacepants.herokuapp.com/#/",
+  article: ""
 }];
 /* harmony default export */ __webpack_exports__["default"] = (portfolio);
 

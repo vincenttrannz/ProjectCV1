@@ -3,6 +3,44 @@ import portfolio from '../../data/portfolio'
 
 export class Portfolio extends Component {
   render() {
+    const article = (data) => {
+      switch (data.id){
+        case 1:
+          return(
+            <React.Fragment>
+              <p className="is__paragraph">
+                This is our first group project at DEV Academy during the COVID-19 lockdown. 
+                At the beginning of the week, we learned new concept of building a website by using <b>HandlebarsJS</b>. Our team included myself, Alice, Josh and Kevin, we came up with the idea to build a simple website where people can use to share great Youtube video that can help to entertain others with lockdown situation. 
+                My role of the project was a <b>"Lead Developer"</b>. I was responsible for setting up the <b>Github repo</b>, prepare some basic <b>NPM packages</b> and create some templates for the team. I also took care for almost the styling of the page by using <b>CSS</b> and <b>Animate.CSS</b> to handle animation.
+              </p>
+              <p className="is__paragraph">
+                As this is our first remote group project, we have realized that we were lack of communication during the process.
+                We didn't have any stand
+              </p>
+            </React.Fragment>
+          );
+        case 2:
+          return(
+            <p className="is__paragraph">
+              hello 2
+            </p>
+          );
+        case 3:
+          return(
+            <p className="is__paragraph">
+              hello 3
+            </p>
+          );
+        case 4:
+          return(
+            <p className="is__paragraph">
+              hello 4
+            </p>
+          );
+        default:
+          return true;
+      }
+    }
     const portfolioClass = "portfolio";
     const panel = "panel";
     return(
@@ -14,13 +52,10 @@ export class Portfolio extends Component {
                 <iframe src={project.url} height="90%" width="100%"></iframe>
               </div>
               <div className={`${portfolioClass}__article`}>
-                <h1 className="is__title">Project 1</h1>
-                <p className="is__paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut arcu consequat, dictum magna a, euismod metus. Aliquam ornare metus quis ex egestas tristique. Pellentesque eu velit imperdiet, fermentum felis pulvinar, venenatis ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue quam dolor, ac condimentum est ultricies vitae. Fusce mollis tellus mauris, aliquet convallis nisi facilisis in. Fusce eu leo vestibulum, rutrum arcu id, rutrum elit. Donec finibus pellentesque rhoncus. Fusce convallis non velit ac ultrices. Praesent commodo hendrerit lectus nec efficitur. Vivamus a metus blandit nunc sollicitudin blandit. Nunc sed ante vel risus vulputate elementum quis quis massa. Sed nec viverra ligula. In dolor ex, faucibus at ex eget, elementum venenatis orci.
-                </p>
-                <p className="is__paragraph">
-                Pellentesque eget tempor justo, eget cursus ante. In pulvinar, magna non vehicula sollicitudin, lacus dui lobortis ipsum, quis molestie nibh libero nec justo. Duis tincidunt nunc eu tortor rutrum ultrices auctor et justo. Proin libero justo, lobortis vel dui sit amet, ornare tempus magna. Integer suscipit augue vel tempor tincidunt. Donec orci enim, consectetur at molestie eget, lacinia a massa. Vivamus facilisis mi et augue laoreet varius sed quis tortor. Cras commodo tristique elit sit amet lacinia.
-                </p>
+                <div className={`${portfolioClass}__article__body`}>
+                  <h1 className="is__title">{project.name}</h1>
+                  {article(project)}
+                </div>
                 <div className={panel}>
                   <div className={`${panel}__left`}>
                     <h2 className="is__subtitle">Technologies</h2>

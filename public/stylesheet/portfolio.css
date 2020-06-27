@@ -36,6 +36,10 @@
   height: inherit;
 }
 
+.portfolio__article__body {
+  height: 60%;
+}
+
 .is__title {
   font-size: 3rem;
   font-weight: 700;
@@ -48,12 +52,11 @@
 
 .is__paragraph {
   font-size: 1rem;
-  font-weight: 300;
   text-align: justify;
 }
 
 .panel {
-  height: 50%;
+  height: 40%;
 }
 
 .panel__left {
